@@ -1,0 +1,1995 @@
+<!doctype html >
+<!--[if IE 8]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html dir="rtl" lang="fa-IR" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<head>
+    <title>کار با عناصر ورودی یا Input Elements در HTML | سایت آموزشی فری لرن</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="pingback" href="https://free-learn.ir/xmlrpc.php" />
+    <meta property="og:image" content="https://free-learn.ir/wp-content/uploads/2018/05/IMG-POST-FREE-LEARN-PACK-1-39.jpg" /><link rel="icon" type="image/png" href="https://free-learn.ir/wp-content/uploads/2018/05/favicon-free-learn.png">
+<!-- This site is optimized with the Yoast SEO Premium plugin v7.5.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="سلام خدمت تمامی دوستان و همراهان محترم سایت آموزشی فری لرن ، امیدوارم که حال همگیتون خوب باشه. لطفا در ادامه با آموزش کار با عناصر ورودی یا Input Elements در HTML با من همراه باشید."/>
+<link rel="canonical" href="عناصر-ورودی-یا-input-elements-در-html.html" />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="کار با عناصر ورودی یا Input Elements در HTML | سایت آموزشی فری لرن" />
+<meta property="og:description" content="سلام خدمت تمامی دوستان و همراهان محترم سایت آموزشی فری لرن ، امیدوارم که حال همگیتون خوب باشه. لطفا در ادامه با آموزش کار با عناصر ورودی یا Input Elements در HTML با من همراه باشید." />
+<meta property="og:url" content="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/" />
+<meta property="og:site_name" content="سایت آموزشی فری لرن" />
+<meta property="article:section" content="آموزش قدم به قدم HTML" />
+<meta property="article:published_time" content="۱۳۹۷-۰۳-۱۵T03:00:36+04:30" />
+<meta property="article:modified_time" content="۱۴۰۲-۰۶-۱۹T13:40:33+03:30" />
+<meta property="og:updated_time" content="۱۴۰۲-۰۶-۱۹T13:40:33+03:30" />
+<meta property="og:image" content="https://free-learn.ir/wp-content/uploads/2018/05/IMG-POST-FREE-LEARN-PACK-1-39.jpg" />
+<meta property="og:image:secure_url" content="https://free-learn.ir/wp-content/uploads/2018/05/IMG-POST-FREE-LEARN-PACK-1-39.jpg" />
+<meta property="og:image:width" content="510" />
+<meta property="og:image:height" content="330" />
+<meta property="og:image:alt" content="کار با عناصر ورودی یا Input Elements در HTML" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="سلام خدمت تمامی دوستان و همراهان محترم سایت آموزشی فری لرن ، امیدوارم که حال همگیتون خوب باشه. لطفا در ادامه با آموزش کار با عناصر ورودی یا Input Elements در HTML با من همراه باشید." />
+<meta name="twitter:title" content="کار با عناصر ورودی یا Input Elements در HTML | سایت آموزشی فری لرن" />
+<meta name="twitter:image" content="https://free-learn.ir/wp-content/uploads/2018/05/IMG-POST-FREE-LEARN-PACK-1-39.jpg" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Person","url":"https:\/\/free-learn.ir\/","sameAs":[],"@id":"#person","name":"Sadegh Asadi"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='https://s.w.org/' />
+<link rel="alternate" type="application/rss+xml" title="سایت آموزشی فری لرن &raquo; خوراک" href="https://free-learn.ir/feed/" />
+<link rel="alternate" type="application/rss+xml" title="سایت آموزشی فری لرن &raquo; خوراک دیدگاه‌ها" href="https://free-learn.ir/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/free-learn.ir\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='crayon-css'  href='https://free-learn.ir/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-theme-familiar-css'  href='https://free-learn.ir/wp-content/plugins/crayon-syntax-highlighter/themes/familiar/familiar.css' type='text/css' media='all' />
+<link rel='stylesheet' id='crayon-font-consolas-css'  href='https://free-learn.ir/wp-content/plugins/crayon-syntax-highlighter/fonts/consolas.css' type='text/css' media='all' />
+<link rel='stylesheet' id='toc-screen-css'  href='https://free-learn.ir/wp-content/plugins/table-of-contents-plus/screen.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-style-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400%2C400italic%2C600%2C600italic%2C700%7CRoboto%3A300%2C400%2C400italic%2C500%2C500italic%2C700%2C900' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://free-learn.ir/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='td-theme-css'  href='https://free-learn.ir/wp-content/themes/Newspaper/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='td-theme-child-css'  href='https://free-learn.ir/wp-content/themes/Newspaper-child/style.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://free-learn.ir/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var CrayonSyntaxSettings = {"version":"_2.7.2_beta","is_admin":"0","ajaxurl":"https:\/\/free-learn.ir\/wp-admin\/admin-ajax.php","prefix":"crayon-","setting":"crayon-setting","selected":"crayon-setting-selected","changed":"crayon-setting-changed","special":"crayon-setting-special","orig_value":"data-orig-value","debug":""};
+var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Click To Expand Code"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://free-learn.ir/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js'></script>
+<link rel='https://api.w.org/' href='https://free-learn.ir/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://free-learn.ir/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://free-learn.ir/wp-includes/wlwmanifest.xml" /> 
+<link rel="stylesheet" href="https://free-learn.ir/wp-content/themes/Newspaper-child/rtl.css" type="text/css" media="screen" /><link rel='shortlink' href='https://free-learn.ir/?p=207' />
+<link rel="alternate" type="application/json+oembed" href="https://free-learn.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffree-learn.ir%2F%25d8%25b9%25d9%2586%25d8%25a7%25d8%25b5%25d8%25b1-%25d9%2588%25d8%25b1%25d9%2588%25d8%25af%25db%258c-%25db%258c%25d8%25a7-input-elements-%25d8%25af%25d8%25b1-html%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://free-learn.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffree-learn.ir%2F%25d8%25b9%25d9%2586%25d8%25a7%25d8%25b5%25d8%25b1-%25d9%2588%25d8%25b1%25d9%2588%25d8%25af%25db%258c-%25db%258c%25d8%25a7-input-elements-%25d8%25af%25d8%25b1-html%2F&#038;format=xml" />
+<style type="text/css">div#toc_container {width: 100%;}</style><!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://free-learn.ir/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]-->
+<!-- JS generated by theme -->
+
+<script>
+    
+    
+
+	    var tdBlocksArray = []; //here we store all the items for the current page
+
+	    //td_block class - each ajax block uses a object of this class for requests
+	    function tdBlock() {
+		    this.id = '';
+		    this.block_type = 1; //block type id (1-234 etc)
+		    this.atts = '';
+		    this.td_column_number = '';
+		    this.td_current_page = 1; //
+		    this.post_count = 0; //from wp
+		    this.found_posts = 0; //from wp
+		    this.max_num_pages = 0; //from wp
+		    this.td_filter_value = ''; //current live filter value
+		    this.is_ajax_running = false;
+		    this.td_user_action = ''; // load more or infinite loader (used by the animation)
+		    this.header_color = '';
+		    this.ajax_pagination_infinite_stop = ''; //show load more at page x
+	    }
+
+
+        // td_js_generator - mini detector
+        (function(){
+            var htmlTag = document.getElementsByTagName("html")[0];
+
+	        if ( navigator.userAgent.indexOf("MSIE 10.0") > -1 ) {
+                htmlTag.className += ' ie10';
+            }
+
+            if ( !!navigator.userAgent.match(/Trident.*rv\:11\./) ) {
+                htmlTag.className += ' ie11';
+            }
+
+	        if ( navigator.userAgent.indexOf("Edge") > -1 ) {
+                htmlTag.className += ' ieEdge';
+            }
+
+            if ( /(iPad|iPhone|iPod)/g.test(navigator.userAgent) ) {
+                htmlTag.className += ' td-md-is-ios';
+            }
+
+            var user_agent = navigator.userAgent.toLowerCase();
+            if ( user_agent.indexOf("android") > -1 ) {
+                htmlTag.className += ' td-md-is-android';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Mac OS X')  ) {
+                htmlTag.className += ' td-md-is-os-x';
+            }
+
+            if ( /chrom(e|ium)/.test(navigator.userAgent.toLowerCase()) ) {
+               htmlTag.className += ' td-md-is-chrome';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Firefox') ) {
+                htmlTag.className += ' td-md-is-firefox';
+            }
+
+            if ( -1 !== navigator.userAgent.indexOf('Safari') && -1 === navigator.userAgent.indexOf('Chrome') ) {
+                htmlTag.className += ' td-md-is-safari';
+            }
+
+            if( -1 !== navigator.userAgent.indexOf('IEMobile') ){
+                htmlTag.className += ' td-md-is-iemobile';
+            }
+
+        })();
+
+
+
+
+        var tdLocalCache = {};
+
+        ( function () {
+            "use strict";
+
+            tdLocalCache = {
+                data: {},
+                remove: function (resource_id) {
+                    delete tdLocalCache.data[resource_id];
+                },
+                exist: function (resource_id) {
+                    return tdLocalCache.data.hasOwnProperty(resource_id) && tdLocalCache.data[resource_id] !== null;
+                },
+                get: function (resource_id) {
+                    return tdLocalCache.data[resource_id];
+                },
+                set: function (resource_id, cachedData) {
+                    tdLocalCache.remove(resource_id);
+                    tdLocalCache.data[resource_id] = cachedData;
+                }
+            };
+        })();
+
+    
+    
+var td_viewport_interval_list=[{"limitBottom":767,"sidebarWidth":228},{"limitBottom":1018,"sidebarWidth":300},{"limitBottom":1140,"sidebarWidth":324}];
+var td_animation_stack_effect="type1";
+var tds_animation_stack=true;
+var td_animation_stack_specific_selectors=".entry-thumb, img[class*=\"wp-image-\"], a.td-sml-link-to-image > img";
+var td_animation_stack_general_selectors=".td-animation-stack .entry-thumb, .post .entry-thumb, .post img[class*=\"wp-image-\"], .post a.td-sml-link-to-image > img";
+var tds_general_modal_image="yes";
+var td_ajax_url="https:\/\/free-learn.ir\/wp-admin\/admin-ajax.php?td_theme_name=Newspaper&v=8.7.4";
+var td_get_template_directory_uri="https:\/\/free-learn.ir\/wp-content\/themes\/Newspaper";
+var tds_snap_menu="snap";
+var tds_logo_on_sticky="";
+var tds_header_style="9";
+var td_please_wait="\u0644\u0637\u0641\u0627 \u0635\u0628\u0631 \u06a9\u0646\u06cc\u062f...";
+var td_email_user_pass_incorrect="\u0646\u0627\u0645 \u06a9\u0627\u0631\u0628\u0631\u06cc \u06cc\u0627 \u0631\u0645\u0632 \u0639\u0628\u0648\u0631 \u0627\u0634\u062a\u0628\u0627\u0647 \u0627\u0633\u062a!";
+var td_email_user_incorrect="\u0627\u06cc\u0645\u06cc\u0644 \u06cc\u0627 \u0646\u0627\u0645 \u06a9\u0627\u0631\u0628\u0631\u06cc \u0627\u0634\u062a\u0628\u0627\u0647 \u0627\u0633\u062a!";
+var td_email_incorrect="\u0627\u06cc\u0645\u06cc\u0644 \u0627\u0634\u062a\u0628\u0627\u0647 \u0627\u0633\u062a!";
+var tds_more_articles_on_post_enable="show";
+var tds_more_articles_on_post_time_to_wait="1";
+var tds_more_articles_on_post_pages_distance_from_top=1400;
+var tds_theme_color_site_wide="#1f5eff";
+var tds_smart_sidebar="enabled";
+var tdThemeName="Newspaper";
+var td_magnific_popup_translation_tPrev="\u0642\u0628\u0644\u06cc (\u062f\u06a9\u0645\u0647 \u062c\u0647\u062a\u200c\u0646\u0645\u0627\u06cc \u0686\u067e)";
+var td_magnific_popup_translation_tNext="\u0628\u0639\u062f\u06cc (\u062f\u06a9\u0645\u0647 \u062c\u0647\u062a\u200c\u0646\u0645\u0627\u06cc \u0631\u0627\u0633\u062a)";
+var td_magnific_popup_translation_tCounter="%curr% \u0627\u0632 %total%";
+var td_magnific_popup_translation_ajax_tError="\u0645\u062d\u062a\u0648\u0627 \u0627\u0632 %url% c \u0646\u0645\u06cc\u200c\u062a\u0648\u0627\u0646\u062f \u0628\u0627\u0631\u06af\u0630\u0627\u0631\u06cc \u0634\u0648\u062f.";
+var td_magnific_popup_translation_image_tError="\u062a\u0635\u0648\u06cc\u0631 #%curr% c \u0646\u0645\u06cc\u200c\u062a\u0648\u0627\u0646\u062f \u0628\u0627\u0631\u06af\u0630\u0627\u0631\u06cc \u0634\u0648\u062f.";
+var tdDateNamesI18n={"month_names":["\u0698\u0627\u0646\u0648\u06cc\u0647","\u0641\u0648\u0631\u06cc\u0647","\u0645\u0627\u0631\u0633","\u0622\u0648\u0631\u06cc\u0644","\u0645\u06cc","\u0698\u0648\u0626\u0646","\u062c\u0648\u0644\u0627\u06cc","\u0622\u06af\u0648\u0633\u062a","\u0633\u067e\u062a\u0627\u0645\u0628\u0631","\u0627\u06a9\u062a\u0628\u0631","\u0646\u0648\u0627\u0645\u0628\u0631","\u062f\u0633\u0627\u0645\u0628\u0631"],"month_names_short":["\u0698\u0627\u0646\u0648\u06cc\u0647","\u0641\u0648\u0631\u06cc\u0647","\u0645\u0627\u0631\u0633","\u0622\u0648\u0631\u06cc\u0644","\u0645\u0647","\u0698\u0648\u0626\u0646","\u062c\u0648\u0644\u0627\u06cc","\u0622\u06af\u0648\u0633\u062a","\u0633\u067e\u062a\u0627\u0645\u0628\u0631","\u0627\u06a9\u062a\u0628\u0631","\u0646\u0648\u0627\u0645\u0628\u0631","\u062f\u0633\u0627\u0645\u0628\u0631"],"day_names":["\u06cc\u06a9\u0634\u0646\u0628\u0647","\u062f\u0648\u0634\u0646\u0628\u0647","\u0633\u0647 \u0634\u0646\u0628\u0647","\u0686\u0647\u0627\u0631 \u0634\u0646\u0628\u0647","\u067e\u0646\u062c\u0634\u0646\u0628\u0647","\u062c\u0645\u0639\u0647","\u0634\u0646\u0628\u0647"],"day_names_short":["\u06cc\u06a9","\u062f\u0648","\u0633\u0647","\u0686\u0647\u0627\u0631","\u067e\u0646\u062c","\u062c\u0645\u0639\u0647","\u0634\u0646\u0628\u0647"]};
+var td_ad_background_click_link="";
+var td_ad_background_click_target="";
+</script>
+
+
+<!-- Header style compiled by theme -->
+
+<style>
+    
+
+body {
+	background-color:#f1f1f1;
+}
+.td-header-wrap .black-menu .sf-menu > .current-menu-item > a,
+    .td-header-wrap .black-menu .sf-menu > .current-menu-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > .current-category-ancestor > a,
+    .td-header-wrap .black-menu .sf-menu > li > a:hover,
+    .td-header-wrap .black-menu .sf-menu > .sfHover > a,
+    .td-header-style-12 .td-header-menu-wrap-full,
+    .sf-menu > .current-menu-item > a:after,
+    .sf-menu > .current-menu-ancestor > a:after,
+    .sf-menu > .current-category-ancestor > a:after,
+    .sf-menu > li:hover > a:after,
+    .sf-menu > .sfHover > a:after,
+    .td-header-style-12 .td-affix,
+    .header-search-wrap .td-drop-down-search:after,
+    .header-search-wrap .td-drop-down-search .btn:hover,
+    input[type=submit]:hover,
+    .td-read-more a,
+    .td-post-category:hover,
+    .td-grid-style-1.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td-grid-style-5.td-hover-1 .td-big-grid-post:hover .td-post-category,
+    .td_top_authors .td-active .td-author-post-count,
+    .td_top_authors .td-active .td-author-comments-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-post-count,
+    .td_top_authors .td_mod_wrap:hover .td-author-comments-count,
+    .td-404-sub-sub-title a:hover,
+    .td-search-form-widget .wpb_button:hover,
+    .td-rating-bar-wrap div,
+    .td_category_template_3 .td-current-sub-category,
+    .dropcap,
+    .td_wrapper_video_playlist .td_video_controls_playlist_wrapper,
+    .wpb_default,
+    .wpb_default:hover,
+    .td-left-smart-list:hover,
+    .td-right-smart-list:hover,
+    .woocommerce-checkout .woocommerce input.button:hover,
+    .woocommerce-page .woocommerce a.button:hover,
+    .woocommerce-account div.woocommerce .button:hover,
+    #bbpress-forums button:hover,
+    .bbp_widget_login .button:hover,
+    .td-footer-wrapper .td-post-category,
+    .td-footer-wrapper .widget_product_search input[type="submit"]:hover,
+    .woocommerce .product a.button:hover,
+    .woocommerce .product #respond input#submit:hover,
+    .woocommerce .checkout input#place_order:hover,
+    .woocommerce .woocommerce.widget .button:hover,
+    .single-product .product .summary .cart .button:hover,
+    .woocommerce-cart .woocommerce table.cart .button:hover,
+    .woocommerce-cart .woocommerce .shipping-calculator-form .button:hover,
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    #bbpress-forums .bbp-pagination .current,
+    #bbpress-forums #bbp-single-user-details #bbp-user-navigation li.current a,
+    .td-theme-slider:hover .slide-meta-cat a,
+    a.vc_btn-black:hover,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .td-scroll-up,
+    .td-smart-list-button:hover,
+    .td-weather-information:before,
+    .td-weather-week:before,
+    .td_block_exchange .td-exchange-header:before,
+    .td_block_big_grid_9.td-grid-style-1 .td-post-category,
+    .td_block_big_grid_9.td-grid-style-5 .td-post-category,
+    .td-grid-style-6.td-hover-1 .td-module-thumb:after,
+    .td-pulldown-syle-2 .td-subcat-dropdown ul:after,
+    .td_block_template_9 .td-block-title:after,
+    .td_block_template_15 .td-block-title:before,
+    div.wpforms-container .wpforms-form div.wpforms-submit-container button[type=submit] {
+        background-color: #1f5eff;
+    }
+
+    .td_block_template_4 .td-related-title .td-cur-simple-item:before {
+        border-color: #1f5eff transparent transparent transparent !important;
+    }
+
+    .woocommerce .woocommerce-message .button:hover,
+    .woocommerce .woocommerce-error .button:hover,
+    .woocommerce .woocommerce-info .button:hover {
+        background-color: #1f5eff !important;
+    }
+    
+    
+    .td_block_template_4 .td-related-title .td-cur-simple-item,
+    .td_block_template_3 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title:after {
+        background-color: #1f5eff;
+    }
+
+    .woocommerce .product .onsale,
+    .woocommerce.widget .ui-slider .ui-slider-handle {
+        background: none #1f5eff;
+    }
+
+    .woocommerce.widget.widget_layered_nav_filters ul li a {
+        background: none repeat scroll 0 0 #1f5eff !important;
+    }
+
+    a,
+    cite a:hover,
+    .td_mega_menu_sub_cats .cur-sub-cat,
+    .td-mega-span h3 a:hover,
+    .td_mod_mega_menu:hover .entry-title a,
+    .header-search-wrap .result-msg a:hover,
+    .td-header-top-menu .td-drop-down-search .td_module_wrap:hover .entry-title a,
+    .td-header-top-menu .td-icon-search:hover,
+    .td-header-wrap .result-msg a:hover,
+    .top-header-menu li a:hover,
+    .top-header-menu .current-menu-item > a,
+    .top-header-menu .current-menu-ancestor > a,
+    .top-header-menu .current-category-ancestor > a,
+    .td-social-icon-wrap > a:hover,
+    .td-header-sp-top-widget .td-social-icon-wrap a:hover,
+    .td-page-content blockquote p,
+    .td-post-content blockquote p,
+    .mce-content-body blockquote p,
+    .comment-content blockquote p,
+    .wpb_text_column blockquote p,
+    .td_block_text_with_title blockquote p,
+    .td_module_wrap:hover .entry-title a,
+    .td-subcat-filter .td-subcat-list a:hover,
+    .td-subcat-filter .td-subcat-dropdown a:hover,
+    .td_quote_on_blocks,
+    .dropcap2,
+    .dropcap3,
+    .td_top_authors .td-active .td-authors-name a,
+    .td_top_authors .td_mod_wrap:hover .td-authors-name a,
+    .td-post-next-prev-content a:hover,
+    .author-box-wrap .td-author-social a:hover,
+    .td-author-name a:hover,
+    .td-author-url a:hover,
+    .td_mod_related_posts:hover h3 > a,
+    .td-post-template-11 .td-related-title .td-related-left:hover,
+    .td-post-template-11 .td-related-title .td-related-right:hover,
+    .td-post-template-11 .td-related-title .td-cur-simple-item,
+    .td-post-template-11 .td_block_related_posts .td-next-prev-wrap a:hover,
+    .comment-reply-link:hover,
+    .logged-in-as a:hover,
+    #cancel-comment-reply-link:hover,
+    .td-search-query,
+    .td-category-header .td-pulldown-category-filter-link:hover,
+    .td-category-siblings .td-subcat-dropdown a:hover,
+    .td-category-siblings .td-subcat-dropdown a.td-current-sub-category,
+    .widget a:hover,
+    .td_wp_recentcomments a:hover,
+    .archive .widget_archive .current,
+    .archive .widget_archive .current a,
+    .widget_calendar tfoot a:hover,
+    .woocommerce a.added_to_cart:hover,
+    .woocommerce-account .woocommerce-MyAccount-navigation a:hover,
+    #bbpress-forums li.bbp-header .bbp-reply-content span a:hover,
+    #bbpress-forums .bbp-forum-freshness a:hover,
+    #bbpress-forums .bbp-topic-freshness a:hover,
+    #bbpress-forums .bbp-forums-list li a:hover,
+    #bbpress-forums .bbp-forum-title:hover,
+    #bbpress-forums .bbp-topic-permalink:hover,
+    #bbpress-forums .bbp-topic-started-by a:hover,
+    #bbpress-forums .bbp-topic-started-in a:hover,
+    #bbpress-forums .bbp-body .super-sticky li.bbp-topic-title .bbp-topic-permalink,
+    #bbpress-forums .bbp-body .sticky li.bbp-topic-title .bbp-topic-permalink,
+    .widget_display_replies .bbp-author-name,
+    .widget_display_topics .bbp-author-name,
+    .footer-text-wrap .footer-email-wrap a,
+    .td-subfooter-menu li a:hover,
+    .footer-social-wrap a:hover,
+    a.vc_btn-black:hover,
+    .td-smart-list-dropdown-wrap .td-smart-list-button:hover,
+    .td_module_17 .td-read-more a:hover,
+    .td_module_18 .td-read-more a:hover,
+    .td_module_19 .td-post-author-name a:hover,
+    .td-instagram-user a,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-2 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more span,
+    .td-pulldown-syle-3 .td-subcat-dropdown:hover .td-subcat-more i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-display-option:hover i,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-link:hover,
+    .td-block-title-wrap .td-wrapper-pulldown-filter .td-pulldown-filter-item .td-cur-simple-item,
+    .td_block_template_2 .td-related-title .td-cur-simple-item,
+    .td_block_template_5 .td-related-title .td-cur-simple-item,
+    .td_block_template_6 .td-related-title .td-cur-simple-item,
+    .td_block_template_7 .td-related-title .td-cur-simple-item,
+    .td_block_template_8 .td-related-title .td-cur-simple-item,
+    .td_block_template_9 .td-related-title .td-cur-simple-item,
+    .td_block_template_10 .td-related-title .td-cur-simple-item,
+    .td_block_template_11 .td-related-title .td-cur-simple-item,
+    .td_block_template_12 .td-related-title .td-cur-simple-item,
+    .td_block_template_13 .td-related-title .td-cur-simple-item,
+    .td_block_template_14 .td-related-title .td-cur-simple-item,
+    .td_block_template_15 .td-related-title .td-cur-simple-item,
+    .td_block_template_16 .td-related-title .td-cur-simple-item,
+    .td_block_template_17 .td-related-title .td-cur-simple-item,
+    .td-theme-wrap .sf-menu ul .td-menu-item > a:hover,
+    .td-theme-wrap .sf-menu ul .sfHover > a,
+    .td-theme-wrap .sf-menu ul .current-menu-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-category-ancestor > a,
+    .td-theme-wrap .sf-menu ul .current-menu-item > a,
+    .td_outlined_btn {
+        color: #1f5eff;
+    }
+
+    a.vc_btn-black.vc_btn_square_outlined:hover,
+    a.vc_btn-black.vc_btn_outlined:hover,
+    .td-mega-menu-page .wpb_content_element ul li a:hover,
+    .td-theme-wrap .td-aj-search-results .td_module_wrap:hover .entry-title a,
+    .td-theme-wrap .header-search-wrap .result-msg a:hover {
+        color: #1f5eff !important;
+    }
+
+    .td-next-prev-wrap a:hover,
+    .td-load-more-wrap a:hover,
+    .td-post-small-box a:hover,
+    .page-nav .current,
+    .page-nav:first-child > div,
+    .td_category_template_8 .td-category-header .td-category a.td-current-sub-category,
+    .td_category_template_4 .td-category-siblings .td-category a:hover,
+    #bbpress-forums .bbp-pagination .current,
+    .post .td_quote_box,
+    .page .td_quote_box,
+    a.vc_btn-black:hover,
+    .td_block_template_5 .td-block-title > *,
+    .td_outlined_btn {
+        border-color: #1f5eff;
+    }
+
+    .td_wrapper_video_playlist .td_video_currently_playing:after {
+        border-color: #1f5eff !important;
+    }
+
+    .header-search-wrap .td-drop-down-search:before {
+        border-color: transparent transparent #1f5eff transparent;
+    }
+
+    .block-title > span,
+    .block-title > a,
+    .block-title > label,
+    .widgettitle,
+    .widgettitle:after,
+    .td-trending-now-title,
+    .td-trending-now-wrapper:hover .td-trending-now-title,
+    .wpb_tabs li.ui-tabs-active a,
+    .wpb_tabs li:hover a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab.vc_active > a,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container .vc_tta-tab:hover > a,
+    .td_block_template_1 .td-related-title .td-cur-simple-item,
+    .woocommerce .product .products h2:not(.woocommerce-loop-product__title),
+    .td-subcat-filter .td-subcat-dropdown:hover .td-subcat-more, 
+    .td_3D_btn,
+    .td_shadow_btn,
+    .td_default_btn,
+    .td_round_btn, 
+    .td_outlined_btn:hover {
+    	background-color: #1f5eff;
+    }
+
+    .woocommerce div.product .woocommerce-tabs ul.tabs li.active {
+    	background-color: #1f5eff !important;
+    }
+
+    .block-title,
+    .td_block_template_1 .td-related-title,
+    .wpb_tabs .wpb_tabs_nav,
+    .vc_tta-container .vc_tta-color-grey.vc_tta-tabs-position-top.vc_tta-style-classic .vc_tta-tabs-container,
+    .woocommerce div.product .woocommerce-tabs ul.tabs:before {
+        border-color: #1f5eff;
+    }
+    .td_block_wrap .td-subcat-item a.td-cur-simple-item {
+	    color: #1f5eff;
+	}
+
+
+    
+    .td-grid-style-4 .entry-title
+    {
+        background-color: rgba(31, 94, 255, 0.7);
+    }
+
+    
+    ul.sf-menu > .td-menu-item > a,
+    .td-theme-wrap .td-header-menu-social {
+        font-weight:500;
+	
+    }
+    
+    .td-mobile-content .td-mobile-main-menu > li > a {
+        font-size:14px;
+	
+    }
+    
+    .td-mobile-content .sub-menu a {
+        font-size:13px;
+	
+    }
+    
+    .td_module_1 .td-module-title {
+    	font-weight:500;
+	
+    }
+    
+    .td-post-template-11 .td-post-header .entry-title {
+        font-size:15px;
+	
+    }
+    
+    .td-post-content p,
+    .td-post-content {
+        font-size:15px;
+	
+    }
+    
+    .td-post-content li {
+        font-size:15px;
+	
+    }
+    
+    .td-post-content h2 {
+        font-size:16px;
+	font-weight:600;
+	
+    }
+    
+    .td-post-content h3 {
+        font-size:16px;
+	font-weight:600;
+	
+    }
+    
+    .td-post-content h4 {
+        font-size:14px;
+	font-weight:normal;
+	
+    }
+    
+    .td-post-content h5 {
+        font-size:16px;
+	font-weight:600;
+	
+    }
+    
+    .td-post-content h6 {
+        font-size:16px;
+	font-weight:600;
+	
+    }
+
+
+
+
+
+    
+    .post .td-post-next-prev-content span {
+        font-weight:600;
+	
+    }
+    
+    .post .td-post-next-prev-content a {
+        font-weight:500;
+	
+    }
+    
+    .post .td-post-share-title {
+        font-family:IRANSans;
+	
+    }
+</style>
+
+<script type="application/ld+json">
+                        {
+                            "@context": "http://schema.org",
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                                "item": {
+                                "@type": "WebSite",
+                                "@id": "https://free-learn.ir/",
+                                "name": "خانه"                                               
+                            }
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                                "item": {
+                                "@type": "WebPage",
+                                "@id": "https://free-learn.ir/category/web_design/html_tutorial/",
+                                "name": "آموزش HTML"
+                            }
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                                "item": {
+                                "@type": "WebPage",
+                                "@id": "https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/",
+                                "name": "آموزش قدم به قدم HTML"                                
+                            }
+                        },{
+                            "@type": "ListItem",
+                            "position": 4,
+                                "item": {
+                                "@type": "WebPage",
+                                "@id": "https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/",
+                                "name": "کار با عناصر ورودی یا Input Elements در HTML"                                
+                            }
+                        }    ]
+                        }
+                       </script><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body onscroll="MyBtn_NightMode();" class="rtl post-template-default single single-post postid-207 single-format-standard ---input-elements--html global-block-template-1 single_template_11 wpb-js-composer js-comp-ver-5.4.7 vc_responsive td-animation-stack-type1 td-boxed-layout" itemscope="itemscope" itemtype="https://schema.org/WebPage">
+
+        <div class="td-scroll-up"><i class="td-icon-menu-up"></i></div>
+    
+    <div class="td-menu-background"></div>
+<div id="td-mobile-nav">
+    <div class="td-mobile-container">
+        <!-- mobile menu top section -->
+        <div class="td-menu-socials-wrap">
+            <!-- socials -->
+            <div class="td-menu-socials">
+                            </div>
+            <!-- close button -->
+            <div class="td-mobile-close">
+                <a href="javascript:void(0);"><i class="td-icon-close-mobile"></i></a>
+            </div>
+        </div>
+
+        <!-- login section -->
+        
+        <!-- menu section -->
+        <div class="td-mobile-content">
+            <div class="menu-main-menu-container"><ul id="menu-main-menu" class="td-mobile-main-menu"><li id="menu-item-11" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-first menu-item-11"><a href="../free-learn_default.html">خانه</a></li>
+<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children menu-item-10"><a href="../category/web_design/html_tutorial/html_tutorial.html">آموزش HTML<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-3766" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3766"><a href="https://free-learn.ir/category/web_design/html_tutorial/file_paths/">آدرس دهی فایل ها</a></li>
+	<li id="menu-item-3768" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-3768"><a href="../category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html">آموزش قدم به قدم HTML</a></li>
+	<li id="menu-item-3771" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3771"><a href="https://free-learn.ir/category/web_design/html_tutorial/global_attributes/">صفات عمومی HTML</a></li>
+	<li id="menu-item-3770" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3770"><a href="https://free-learn.ir/category/web_design/html_tutorial/html-attributes/">صفات خصوصی HTML</a></li>
+	<li id="menu-item-3769" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3769"><a href="https://free-learn.ir/category/web_design/html_tutorial/global_events/">رویدادهای عمومی HTML</a></li>
+	<li id="menu-item-3767" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3767"><a href="../category/web_design/html_tutorial/html_tags.html">آموزش تگ های HTML</a></li>
+</ul>
+</li>
+<li id="menu-item-1425" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-1425"><a href="../category/web_design/css_tutorial/css_tutorial.html">آموزش CSS<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-3773" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3773"><a href="https://free-learn.ir/category/web_design/css_tutorial/tutorial_step_by_step_css/">آموزش مقدماتی CSS</a></li>
+	<li id="menu-item-3772" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3772"><a href="https://free-learn.ir/category/web_design/css_tutorial/tutorial_advanced_css/">آموزش پیشرفته CSS</a></li>
+	<li id="menu-item-3774" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3774"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_selectors/">آموزش انتخابگرهای CSS</a></li>
+	<li id="menu-item-3776" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3776"><a href="https://free-learn.ir/category/web_design/css_tutorial/pseudo-elements/">آموزش شبه عناصر CSS</a></li>
+	<li id="menu-item-3777" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3777"><a href="https://free-learn.ir/category/web_design/css_tutorial/pseudo-classes/">آموزش شبه کلاس های CSS</a></li>
+	<li id="menu-item-3779" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3779"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_property/">آموزش ویژگی های CSS</a></li>
+	<li id="menu-item-3775" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3775"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_functions/">آموزش توابع CSS</a></li>
+	<li id="menu-item-3778" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3778"><a href="https://free-learn.ir/category/web_design/css_tutorial/learn-responsive/">آموزش واکنش گرایی در CSS</a></li>
+</ul>
+</li>
+<li id="menu-item-2606" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2606"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/">آموزش JavaScript<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-3785" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3785"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/learn-base-js/">آموزش جاوا اسکریپت مقدماتی</a></li>
+	<li id="menu-item-3784" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3784"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/learn-advanced-js/">آموزش جاوا اسکریپت پیشرفته</a></li>
+	<li id="menu-item-3783" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3783"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/dom_in_javascript/">آموزش DOM در جاوا اسکریپت</a></li>
+	<li id="menu-item-3781" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3781"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/bom_in_javascript/">آموزش BOM در جاوا اسکریپت</a></li>
+	<li id="menu-item-3782" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3782"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/cssom_in_javascript/">آموزش CSSOM در جاوا اسکریپت</a></li>
+	<li id="menu-item-3780" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3780"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/ajax_in_javascript/">آموزش Ajax در جاوا اسکریپت</a></li>
+	<li id="menu-item-3786" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3786"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/methods_and_properties/">آموزش متدهای جاوا اسکریپت</a></li>
+</ul>
+</li>
+<li id="menu-item-3383" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3383"><a href="عناصر-ورودی-یا-input-elements-در-html.html#">گوناگون<i class="td-icon-menu-right td-element-after"></i></a>
+<ul class="sub-menu">
+	<li id="menu-item-1396" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1396"><a href="https://free-learn.ir/category/learn-colors/">آموزش استفاده از رنگ ها در وب</a></li>
+	<li id="menu-item-1870" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1870"><a href="https://free-learn.ir/category/online-tools/">ابزارهای آنلاین</a></li>
+	<li id="menu-item-1804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1804"><a href="../online-editor/editor.htm">ادیتور آنلاین</a></li>
+	<li id="menu-item-3375" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3375"><a href="https://free-learn.ir/reference/index.php">مرجع آموزش های فری لرن</a></li>
+</ul>
+</li>
+<li id="menu-item-3337" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3337"><a href="https://free-learn.ir/beginner-user/">تازه واردها بخونن</a></li>
+</ul></div>        </div>
+    </div>
+
+    <!-- register/login section -->
+    </div>    <div class="td-search-background"></div>
+<div class="td-search-wrap-mob">
+	<div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+		<form method="get" class="td-search-form" action="../free-learn_default.html">
+			<!-- close button -->
+			<div class="td-search-close">
+				<a href="عناصر-ورودی-یا-input-elements-در-html.html#"><i class="td-icon-close-mobile"></i></a>
+			</div>
+			<div role="search" class="td-search-input">
+				<span>جستجو</span>
+				<input id="td-header-search-mob" type="text" value="" name="s" autocomplete="off" />
+			</div>
+		</form>
+		<div id="td-aj-search-mob"></div>
+	</div>
+</div>    
+    
+    <div id="td-outer-wrap" class="td-theme-wrap">
+    
+        <!--
+Header style 9
+-->
+
+<div class="td-header-wrap td-header-style-9 ">
+    
+    <div class="td-header-top-menu-full td-container-wrap ">
+        <div class="td-container td-header-row td-header-top-menu">
+            
+    <div class="top-bar-style-1">
+        
+<div class="td-header-sp-top-menu">
+
+
+	<div class="menu-top-container"><ul id="menu-top" class="top-header-menu"><li id="menu-item-2725" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-2725"><a href="https://free-learn.ir/%d8%a2%d8%b2%d9%85%d9%88%d9%86-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86/">آزمون آنلاین</a></li>
+<li id="menu-item-2722" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-2722"><a href="https://free-learn.ir/%d8%aa%d9%85%d8%b1%db%8c%d9%86-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86/">تمرین آنلاین</a></li>
+<li id="menu-item-2795" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-2795"><a href="https://free-learn.ir/%d9%85%d8%ab%d8%a7%d9%84-%d9%87%d8%a7%db%8c-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1%d8%af%db%8c/">مثال های کاربردی</a></li>
+</ul></div></div>
+        <div class="td-header-sp-top-widget">
+    
+    </div>    </div>
+
+<!-- LOGIN MODAL -->
+        </div>
+    </div>
+
+    <div class="td-banner-wrap-full td-logo-wrap-full td-logo-mobile-loaded td-container-wrap ">
+        <div class="td-header-sp-logo">
+            		<div class="td-logo-text-wrap">
+			<span class="td-logo-text-container">
+				<a class="td-logo-wrap" href="../free-learn_default.html">
+											<span class="td-logo-text">Free-Learn</span>
+										<span class="td-tagline-text">Free Educational Site</span>
+				</a>
+			</span>
+		</div>
+	        </div>
+    </div>
+
+    <div class="td-header-menu-wrap-full td-container-wrap ">
+        
+        <div class="td-header-menu-wrap td-header-gradient ">
+            <div class="td-container td-header-row td-header-main-menu">
+                <div id="td-header-menu" role="navigation">
+    <div id="td-top-mobile-toggle"><a href="javascript:void(0);"><i class="td-icon-font td-icon-mobile"></i></a></div>
+    <div class="td-main-menu-logo td-logo-in-header">
+        		<a class="td-mobile-logo td-sticky-disable" href="../free-learn_default.html">
+			<img src="https://free-learn.ir/wp-content/uploads/2018/05/logo-footer-12.png" alt="سایت آموزشی فری لرن"/>
+		</a>
+	    </div>
+    <div class="menu-main-menu-container"><ul id="menu-main-menu-1" class="sf-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-first td-menu-item td-normal-menu menu-item-11"><a href="../free-learn_default.html">خانه</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-has-children td-menu-item td-normal-menu menu-item-10"><a href="../category/web_design/html_tutorial/html_tutorial.html">آموزش HTML</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3766"><a href="https://free-learn.ir/category/web_design/html_tutorial/file_paths/">آدرس دهی فایل ها</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent td-menu-item td-normal-menu menu-item-3768"><a href="../category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html">آموزش قدم به قدم HTML</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3771"><a href="https://free-learn.ir/category/web_design/html_tutorial/global_attributes/">صفات عمومی HTML</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3770"><a href="https://free-learn.ir/category/web_design/html_tutorial/html-attributes/">صفات خصوصی HTML</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3769"><a href="https://free-learn.ir/category/web_design/html_tutorial/global_events/">رویدادهای عمومی HTML</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3767"><a href="https://free-learn.ir/category/web_design/html_tutorial/html_tags.html">آموزش تگ های HTML</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-1425"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_tutorial.html">آموزش CSS</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3773"><a href="https://free-learn.ir/category/web_design/css_tutorial/tutorial_step_by_step_css/">آموزش مقدماتی CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3772"><a href="https://free-learn.ir/category/web_design/css_tutorial/tutorial_advanced_css/">آموزش پیشرفته CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3774"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_selectors/">آموزش انتخابگرهای CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3776"><a href="https://free-learn.ir/category/web_design/css_tutorial/pseudo-elements/">آموزش شبه عناصر CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3777"><a href="https://free-learn.ir/category/web_design/css_tutorial/pseudo-classes/">آموزش شبه کلاس های CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3779"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_property/">آموزش ویژگی های CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3775"><a href="https://free-learn.ir/category/web_design/css_tutorial/css_functions/">آموزش توابع CSS</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3778"><a href="https://free-learn.ir/category/web_design/css_tutorial/learn-responsive/">آموزش واکنش گرایی در CSS</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children td-menu-item td-normal-menu menu-item-2606"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/">آموزش JavaScript</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3785"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/learn-base-js/">آموزش جاوا اسکریپت مقدماتی</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3784"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/learn-advanced-js/">آموزش جاوا اسکریپت پیشرفته</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3783"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/dom_in_javascript/">آموزش DOM در جاوا اسکریپت</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3781"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/bom_in_javascript/">آموزش BOM در جاوا اسکریپت</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3782"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/cssom_in_javascript/">آموزش CSSOM در جاوا اسکریپت</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3780"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/ajax_in_javascript/">آموزش Ajax در جاوا اسکریپت</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-3786"><a href="https://free-learn.ir/category/web_design/javascript_tutorial/methods_and_properties/">آموزش متدهای جاوا اسکریپت</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children td-menu-item td-normal-menu menu-item-3383"><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#">گوناگون</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category td-menu-item td-normal-menu menu-item-1396"><a href="https://free-learn.ir/category/learn-colors/">آموزش استفاده از رنگ ها در وب</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-1870"><a href="https://free-learn.ir/category/online-tools/">ابزارهای آنلاین</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-1804"><a href="https://free-learn.ir/online-editor/editor.htm">ادیتور آنلاین</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3375"><a href="https://free-learn.ir/reference/index.php">مرجع آموزش های فری لرن</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-3337"><a href="https://free-learn.ir/beginner-user/">تازه واردها بخونن</a></li>
+</ul></div></div>
+
+
+    <div class="header-search-wrap">
+        <div class="td-search-btns-wrap">
+            <a id="td-header-search-button" href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+            <a id="td-header-search-button-mob" href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#" role="button" class="dropdown-toggle " data-toggle="dropdown"><i class="td-icon-search"></i></a>
+        </div>
+
+        <div class="td-drop-down-search" aria-labelledby="td-header-search-button">
+            <form method="get" class="td-search-form" action="https://free-learn.ir/free-learn_default.html">
+                <div role="search" class="td-head-form-search-wrap">
+                    <input id="td-header-search" type="text" value="" name="s" autocomplete="off" /><input class="wpb_button wpb_btn-inverse btn" type="submit" id="td-header-search-top" value="جستجو" />
+                </div>
+            </form>
+            <div id="td-aj-search"></div>
+        </div>
+    </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div><article id="post-207" class="td-post-template-11 post-207 post type-post status-publish format-standard has-post-thumbnail hentry category-tutorial_step_by_step_html td-container-wrap" itemscope itemtype="https://schema.org/Article">
+    <div class="td-video-template-bg">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span12 td-crumb-container"><div class="entry-crumbs"><span><a title="" class="entry-crumb" href="https://free-learn.ir/free-learn_default.html">خانه</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="مشاهده همه مطالب در آموزش HTML" class="entry-crumb" href="https://free-learn.ir/category/web_design/html_tutorial/html_tutorial.html">آموزش HTML</a></span> <i class="td-icon-right td-bread-sep"></i> <span><a title="مشاهده همه مطالب در آموزش قدم به قدم HTML" class="entry-crumb" href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html">آموزش قدم به قدم HTML</a></span> <i class="td-icon-right td-bread-sep td-bred-no-url-last"></i> <span class="td-bred-no-url-last">کار با عناصر ورودی یا Input Elements در HTML</span></div></div>
+
+                <div class="td-pb-span4 td-post-header">
+
+                    <ul class="td-category"><li class="entry-category"><a  style="background-color:#ff5722; color:#fff; border-color:#ff5722;" href="https://free-learn.ir/category/web_design/html_tutorial/html_tutorial.html">آموزش HTML</a></li><li class="entry-category"><a  style="background-color:#4caf50; color:#fff; border-color:#4caf50;" href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html">آموزش قدم به قدم HTML</a></li></ul>
+                    <header class="td-post-title">
+                        <h1 class="entry-title">کار با عناصر ورودی یا Input Elements در HTML</h1>
+
+                        
+
+                        <div class="td-module-meta-info">
+                            <div class="td-post-author-name"><div class="td-author-by">توسط</div> <a href="https://free-learn.ir/author/adminfreelearn/">صادق اسدی</a><div class="td-author-line"> - </div> </div>                            <span class="td-post-date td-post-date-no-dot"><time class="entry-date updated td-module-date" datetime="2018-06-05T03:00:36+04:30" >۱۳۹۷-۰۳-۱۵</time></span>                                                                                </div>
+                    </header>
+
+
+                    
+                </div>
+
+                <div class="td-pb-span8 td-post-featured-video">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="td-video-template-bg-small">
+        <div class="td-container">
+                  <div class="td_block_wrap td_block_related_posts td-related-full-width td_uid_2_651e88de60a00_rand td_with_ajax_pagination td-pb-border-top td_block_template_1"  data-td-block-uid="td_uid_2_651e88de60a00" ><script>var block_td_uid_2_651e88de60a00 = new tdBlock();
+block_td_uid_2_651e88de60a00.id = "td_uid_2_651e88de60a00";
+block_td_uid_2_651e88de60a00.atts = '{"limit":5,"ajax_pagination":"next_prev","live_filter":"cur_post_same_categories","td_ajax_filter_type":"td_custom_related","class":"td-related-full-width td_uid_2_651e88de60a00_rand","td_column_number":5,"live_filter_cur_post_id":207,"live_filter_cur_post_author":"1","block_template_id":"","header_color":"","ajax_pagination_infinite_stop":"","offset":"","td_ajax_preloading":"","td_filter_default_txt":"","td_ajax_filter_ids":"","el_class":"","color_preset":"","border_top":"","css":"","tdc_css":"","tdc_css_class":"td_uid_2_651e88de60a00_rand","tdc_css_class_style":"td_uid_2_651e88de60a00_rand_style"}';
+block_td_uid_2_651e88de60a00.td_column_number = "5";
+block_td_uid_2_651e88de60a00.block_type = "td_block_related_posts";
+block_td_uid_2_651e88de60a00.post_count = "5";
+block_td_uid_2_651e88de60a00.found_posts = "34";
+block_td_uid_2_651e88de60a00.header_color = "";
+block_td_uid_2_651e88de60a00.ajax_pagination_infinite_stop = "";
+block_td_uid_2_651e88de60a00.max_num_pages = "7";
+tdBlocksArray.push(block_td_uid_2_651e88de60a00);
+</script><h4 class="td-related-title td-block-title"><a id="td_uid_3_651e88de62e05" class="td-related-left td-cur-simple-item" data-td_filter_value="" data-td_block_id="td_uid_2_651e88de60a00" href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#">مرتبط با این آموزش</a><a id="td_uid_4_651e88de62e41" class="td-related-right" data-td_filter_value="td_related_more_from_author" data-td_block_id="td_uid_2_651e88de60a00" href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#">آموزش های بیشتر</a></h4><div id=td_uid_2_651e88de60a00 class="td_block_inner">
+
+	<div class="td-related-row">
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td-meta-info-hide td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://free-learn.ir/%d8%a7%d8%af%db%8c%d8%aa%d9%88%d8%b1-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86-%d8%b2%d8%a8%d8%a7%d9%86-html/" rel="bookmark" class="td-image-wrap" title="ادیتور آنلاین زبان HTML"><img width="218" height="150" class="entry-thumb" src="https://free-learn.ir/wp-content/uploads/2020/01/pic_post_property_css_2020_06-69-218x150.jpg" srcset="https://free-learn.ir/wp-content/uploads/2020/01/pic_post_property_css_2020_06-69-218x150.jpg 218w, https://free-learn.ir/wp-content/uploads/2020/01/pic_post_property_css_2020_06-69-100x70.jpg 100w" sizes="(max-width: 218px) 100vw, 218px" alt="" title="ادیتور آنلاین زبان HTML"/></a></div>                <a href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html" class="td-post-category">آموزش قدم به قدم HTML</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%a7%d8%af%db%8c%d8%aa%d9%88%d8%b1-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86-%d8%b2%d8%a8%d8%a7%d9%86-html/" rel="bookmark" title="ادیتور آنلاین زبان HTML">ادیتور آنلاین زبان HTML</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td-meta-info-hide td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://free-learn.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%82%d8%b1%d8%a7%d8%b1-%d8%af%d8%a7%d8%af%d9%86-%d9%88%db%8c%d8%af%d8%a6%d9%88%d9%87%d8%a7%db%8c-%db%8c%d9%88%d8%aa%db%8c%d9%88%d8%a8-%d8%af%d8%b1-html/" rel="bookmark" class="td-image-wrap" title="آموزش نحوه قرار دادن ویدئوهای یوتیوب در HTML"><img width="218" height="150" class="entry-thumb" src="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-125-218x150.jpg" srcset="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-125-218x150.jpg 218w, https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-125-100x70.jpg 100w" sizes="(max-width: 218px) 100vw, 218px" alt="" title="آموزش نحوه قرار دادن ویدئوهای یوتیوب در HTML"/></a></div>                <a href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html" class="td-post-category">آموزش قدم به قدم HTML</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%82%d8%b1%d8%a7%d8%b1-%d8%af%d8%a7%d8%af%d9%86-%d9%88%db%8c%d8%af%d8%a6%d9%88%d9%87%d8%a7%db%8c-%db%8c%d9%88%d8%aa%db%8c%d9%88%d8%a8-%d8%af%d8%b1-html/" rel="bookmark" title="آموزش نحوه قرار دادن ویدئوهای یوتیوب در HTML">آموزش نحوه قرار دادن ویدئوهای یوتیوب در HTML</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td-meta-info-hide td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://free-learn.ir/%da%a9%d8%a7%d8%b1-%d8%a8%d8%a7-%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d9%87%d8%a7-%db%8c%d8%a7-plugins-%d8%af%d8%b1-html/" rel="bookmark" class="td-image-wrap" title="آموزش کار با پلاگین ها یا Plugins در HTML"><img width="218" height="150" class="entry-thumb" src="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-9-218x150.jpg" srcset="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-9-218x150.jpg 218w, https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-9-100x70.jpg 100w" sizes="(max-width: 218px) 100vw, 218px" alt="آموزش کار با پلاگین ها یا Plugins در HTML" title="آموزش کار با پلاگین ها یا Plugins در HTML"/></a></div>                <a href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html" class="td-post-category">آموزش قدم به قدم HTML</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%da%a9%d8%a7%d8%b1-%d8%a8%d8%a7-%d9%be%d9%84%d8%a7%da%af%db%8c%d9%86-%d9%87%d8%a7-%db%8c%d8%a7-plugins-%d8%af%d8%b1-html/" rel="bookmark" title="آموزش کار با پلاگین ها یا Plugins در HTML">آموزش کار با پلاگین ها یا Plugins در HTML</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td-meta-info-hide td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://free-learn.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%82%d8%b1%d8%a7%d8%b1-%d8%af%d8%a7%d8%af%d9%86-%d9%88%db%8c%d8%af%d8%a6%d9%88-%d8%af%d8%b1-%d8%b5%d9%81%d8%ad%d8%a7%d8%aa-%d9%88%d8%a8/" rel="bookmark" class="td-image-wrap" title="آموزش نحوه قرار دادن ویدئو در صفحات وب"><img width="218" height="150" class="entry-thumb" src="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-111-218x150.jpg" srcset="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-111-218x150.jpg 218w, https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-111-100x70.jpg 100w" sizes="(max-width: 218px) 100vw, 218px" alt="" title="آموزش نحوه قرار دادن ویدئو در صفحات وب"/></a></div>                <a href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html" class="td-post-category">آموزش قدم به قدم HTML</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%82%d8%b1%d8%a7%d8%b1-%d8%af%d8%a7%d8%af%d9%86-%d9%88%db%8c%d8%af%d8%a6%d9%88-%d8%af%d8%b1-%d8%b5%d9%81%d8%ad%d8%a7%d8%aa-%d9%88%d8%a8/" rel="bookmark" title="آموزش نحوه قرار دادن ویدئو در صفحات وب">آموزش نحوه قرار دادن ویدئو در صفحات وب</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 -->
+
+	<div class="td-related-span4">
+
+        <div class="td_module_related_posts td-animation-stack td-meta-info-hide td_mod_related_posts">
+            <div class="td-module-image">
+                <div class="td-module-thumb"><a href="https://free-learn.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%82%d8%b1%d8%a7%d8%b1-%d8%af%d8%a7%d8%af%d9%86-%d9%81%d8%a7%db%8c%d9%84-%d9%87%d8%a7%db%8c-%d8%b5%d9%88%d8%aa%db%8c-%d8%af%d8%b1-html/" rel="bookmark" class="td-image-wrap" title="آموزش نحوه قرار دادن فایل های صوتی در HTML"><img width="218" height="150" class="entry-thumb" src="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-109-218x150.jpg" srcset="https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-109-218x150.jpg 218w, https://free-learn.ir/wp-content/uploads/2018/06/IMG-POST-FREE-LEARN-PACK-1-109-100x70.jpg 100w" sizes="(max-width: 218px) 100vw, 218px" alt="" title="آموزش نحوه قرار دادن فایل های صوتی در HTML"/></a></div>                <a href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html" class="td-post-category">آموزش قدم به قدم HTML</a>            </div>
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d9%86%d8%ad%d9%88%d9%87-%d9%82%d8%b1%d8%a7%d8%b1-%d8%af%d8%a7%d8%af%d9%86-%d9%81%d8%a7%db%8c%d9%84-%d9%87%d8%a7%db%8c-%d8%b5%d9%88%d8%aa%db%8c-%d8%af%d8%b1-html/" rel="bookmark" title="آموزش نحوه قرار دادن فایل های صوتی در HTML">آموزش نحوه قرار دادن فایل های صوتی در HTML</a></h3>            </div>
+        </div>
+        
+	</div> <!-- ./td-related-span4 --></div><!--./row-fluid--></div><div class="td-next-prev-wrap"><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#" class="td-ajax-prev-page ajax-page-disabled" id="prev-page-td_uid_2_651e88de60a00" data-td_block_id="td_uid_2_651e88de60a00"><i class="td-icon-font td-icon-menu-left"></i></a><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#"  class="td-ajax-next-page" id="next-page-td_uid_2_651e88de60a00" data-td_block_id="td_uid_2_651e88de60a00"><i class="td-icon-font td-icon-menu-right"></i></a></div></div> <!-- ./block -->        </div>
+    </div>
+
+    <div class="td-container">
+        <div class="td-pb-row">
+                                <div class="td-pb-span8 td-main-content td-sidebar-left-content" role="main">
+                        <div class="td-ss-main-content">
+                            
+    <div class="td-post-content" id="myco222frprnt">
+<p class='MyUpdate_Date'> این آموزش در تاریخ ۱۴۰۲/۰۶/۱۹ آپدیت شده است. </p>        <p style="text-align: center;">کار با عناصر ورودی یا Input Elements در HTML</p>
+<p>سلام خدمت تمامی دوستان و همراهان محترم سایت آموزشی <span style="color: #ff5722;"><a style="color: #ff5722;" href="https://free-learn.ir/free-learn_default.html" target="_blank" rel="noopener"><strong>فری لرن</strong></a></span> ، امیدوارم که حال همگیتون خوب باشه. لطفا در ادامه با آموزش کار با عناصر ورودی یا Input Elements در HTML با من همراه باشید.</p>
+<p style="text-align: center;"><img class="aligncenter wp-image-33 size-full" src="https://free-learn.ir/wp-content/uploads/2018/05/cover-html-tutorial.png" alt="کار با عناصر ورودی یا Input Elements در HTML" width="475" height="170" srcset="https://free-learn.ir/wp-content/uploads/2018/05/cover-html-tutorial.png 475w, https://free-learn.ir/wp-content/uploads/2018/05/cover-html-tutorial-300x107.png 300w" sizes="(max-width: 475px) 100vw, 475px" /></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<div id="toc_container" class="no_bullets"><p class="toc_title">آنچه در این جلسه میخوانید :</p><ul class="toc_list"><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#__Input_Elements_HTML"><span class="toc_number toc_depth_1">1</span> عناصر ورودی یا Input Elements در HTML</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Text"><span class="toc_number toc_depth_1">2</span> Input از نوع Text</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Password"><span class="toc_number toc_depth_1">3</span> Input از نوع Password</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Submit"><span class="toc_number toc_depth_1">4</span> Input از نوع Submit</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Reset"><span class="toc_number toc_depth_1">5</span> Input از نوع Reset</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Radio"><span class="toc_number toc_depth_1">6</span> Input از نوع Radio</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Checkbox"><span class="toc_number toc_depth_1">7</span> Input از نوع Checkbox</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Button"><span class="toc_number toc_depth_1">8</span> Input از نوع Button</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Color"><span class="toc_number toc_depth_1">9</span> Input از نوع Color</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Date"><span class="toc_number toc_depth_1">10</span> Input از نوع Date</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Datetime-local"><span class="toc_number toc_depth_1">11</span> Input از نوع Datetime-local</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Email"><span class="toc_number toc_depth_1">12</span> Input از نوع Email</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Month"><span class="toc_number toc_depth_1">13</span> Input از نوع Month</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Number"><span class="toc_number toc_depth_1">14</span> Input از نوع Number</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Range"><span class="toc_number toc_depth_1">15</span> Input از نوع Range</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Search"><span class="toc_number toc_depth_1">16</span> Input از نوع Search</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Tel"><span class="toc_number toc_depth_1">17</span> Input از نوع Tel</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Time"><span class="toc_number toc_depth_1">18</span> Input از نوع Time</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__URL"><span class="toc_number toc_depth_1">19</span> Input از نوع URL</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Week"><span class="toc_number toc_depth_1">20</span> Input از نوع Week</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__File"><span class="toc_number toc_depth_1">21</span> Input از نوع File</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Image"><span class="toc_number toc_depth_1">22</span> Input از نوع Image</a></li><li><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#Input__Hidden"><span class="toc_number toc_depth_1">23</span> Input از نوع Hidden</a></li></ul></div>
+<h2><span id="__Input_Elements_HTML">عناصر ورودی یا Input Elements در HTML</span></h2>
+<p>در بخش قبلی ما با <span style="color: #ff5722;"><a style="color: #ff5722;" href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%82%d8%a7%d8%a8%d9%84-%d8%a7%d8%b3%d8%aa%d9%81%d8%a7%d8%af%d9%87-%d8%af%d8%b1-%d8%aa%da%af-form-%d8%af%d8%b1-html/" target="_blank" rel="noopener">تگ های قابل استفاده در تگ Form</a></span> آشنا شدیم و اشاره کردم که در بخش بعدی یعنی همین بخش ما بطور کامل با نوع های مختلف Input ها در HTML آشنا خواهیم شد.</p>
+<p>حال در این بخش بطور کامل میخواهیم با نوع های مختلف اینپوت ها ( Input ) در فرم ها و بطور کلی در HTML آشنا شویم و با آنها کار کنیم. لطفا در ادامه و تا پایان با من همراه باشید.</p>
+<ul>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;text&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;password&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;submit&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;reset&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;radio&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;checkbox&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;button&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;color&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;date&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;datetime-local&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;email&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;month&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;number&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;range&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;search&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;tel&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;time&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;url&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;week&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;file&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;image&#8221;&gt;</li>
+<li dir="ltr" style="text-align: left;">&lt;input type=&#8221;hidden&#8221;&gt;</li>
+</ul>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Text">Input از نوع Text</span></h2>
+<p>از پراستفاده ترین اینپوت ها، همین نوع Text می باشد، که با استفاده از اون میتونیم یه متن رو از کاربر بگیریم. ( مثلا نام ، نام خانوادگی و.. )</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d435697410056" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="text"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d435697410056-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d435697410056-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"text"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0005 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Forms_T2.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Password">Input از نوع Password</span></h2>
+<p>اسمش مشخصه دیگه، برای ایجاد یک فیلد از نوع رمز یا پسورد ( یعنی مکانی برای وارد کردن رمز یا پسورد )</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-blue" >
+	<div class="vc_message_box-icon"><i class="fa fa-info-circle"></i>
+	</div><p>متنی که درون فیلد پسورد قرار میگیرد در حالت عادی و در ظاهر قابل مشاهده نیست و معمولا بصورت دایره های توپُر نمایش داده می شود. </p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d43f468052133" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="password"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d43f468052133-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d43f468052133-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"password"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T1.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Submit">Input از نوع Submit</span></h2>
+<p>اینو بارها و بارها تا الان داخل مثال ها دیده اید، دکمه ای برای ارسال داده های فرم بسمت سرور که بهش میگیم Submit ( یعنی ارسال کردن )</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d443306085367" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="submit" value="ارسال"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d443306085367-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d443306085367-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"submit"</span><span class="crayon-h"> </span><span class="crayon-e ">value</span><span class="crayon-o">=</span><span class="crayon-s ">"ارسال"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Forms_T2.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Reset">Input از نوع Reset</span></h2>
+<p>همونطور که از اسم این نوع مشخصه ، برای ریست کردن داده های داخل فیلدهای فرم استفاده میشود، یعنی در واقع یک دکمه می باشد که با زدن آن تمامی اطلاعات وارد شده در فرم پاک می شوند.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d445266670833" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="reset" value="پاک کردن"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d445266670833-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d445266670833-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"reset"</span><span class="crayon-h"> </span><span class="crayon-e ">value</span><span class="crayon-o">=</span><span class="crayon-s ">"پاک کردن"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T2.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Radio">Input از نوع Radio</span></h2>
+<p>دکمه های رادیویی دکمه هایی هستند که کاربر فقط و فقط قادر است یکی از گزینه ها را انتخاب نماید و امکان انتخاب بیش از یک گزینه در این نوع <span style="color: #ff5722;"><a style="color: #ff5722;" href="https://free-learn.ir/%da%a9%d8%a7%d8%b1-%d8%a8%d8%a7-%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%db%8c%d8%a7-elements-%d8%af%d8%b1-html/" target="_blank" rel="noopener">عناصر</a></span> وجود ندارد.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d447003876890" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="radio"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d447003876890-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d447003876890-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"radio"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T3.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Checkbox">Input از نوع Checkbox</span></h2>
+<p>برخلاف دکمه های رادیویی چک باکس ( Checkbox ) هارو میشه بیش از چندتارو بصورت همزمان انتخاب کرد.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d44a879494588" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="checkbox"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d44a879494588-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d44a879494588-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"checkbox"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T4.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Button">Input از نوع Button</span></h2>
+<p>خب ما گفتیم ۲نمونه دکمه میتونیم داشته باشیم ، یه دکمه از نوع submit که فرم رو ارسال میکنه و یه دکمه از نوع button که نمیتونه فرم رو ارسال کنه فقط یه دکمه با قابلیت کلیک شدن می باشد، مثلا کاربر روش کلیک کنه بعد مثلا یه پیغام نشون بده یا خیلی کارای دیگه میشه کرد.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d44d130738411" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="button" onclick="alert('سلام خوبی؟')" value="روی من کلیک کن"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d44d130738411-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d44d130738411-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"button"</span><span class="crayon-h"> </span><span class="crayon-e ">onclick</span><span class="crayon-o">=</span><span class="crayon-s ">"alert('سلام خوبی؟')"</span><span class="crayon-h"> </span><span class="crayon-e ">value</span><span class="crayon-o">=</span><span class="crayon-s ">"روی من کلیک کن"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T5.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Color">Input از نوع Color</span></h2>
+<p>با استفاده از این نوع اینپوت میتونیم یک باکس رنگ را برای کاربر به نمایش دربیاوریم تا کاربر بتواند رنگ دلخواهش را انتخاب نماید.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d44f438740268" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="color"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d44f438740268-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d44f438740268-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"color"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T6.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Date">Input از نوع Date</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار بصورت تاریخ ( سال / ماه / روز ) را دریافت کرد.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d451907258389" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="date"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d451907258389-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d451907258389-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"date"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T7.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Datetime-local">Input از نوع Datetime-local</span></h2>
+<p>با استفاده از این عنصر میتوان به دلخواه یک تاریخ ( سال / ماه / روز ) و ( ساعت / دقیقه / ثانیه ) را از کاربر دریافت کرد.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-warning" >
+	<div class="vc_message_box-icon"><i class="fa fa-exclamation-triangle"></i>
+	</div><p>نحوه نمایش این Input در مرورگرها ممکنه باهمدیگه فرق کنن، مثلا ممکنه در یک مرورگر به یک شکل نشون بده و در مرورگر دیگری به شکل دیگه.</p>
+</div>
+</div></div></div></div>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-success" >
+	<div class="vc_message_box-icon"><i class="fa fa-check"></i>
+	</div><p>شکل کلی تاریخ و زمانی که این اینپوت دریافت میکند بصورت زیر می باشد :</p>
+<p dir="ltr" style="text-align: left;">Month/Day/Year , Hour:Minute AM|PM</p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d454093036289" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="datetime-local"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d454093036289-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d454093036289-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"datetime-local"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0002 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T8.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Email">Input از نوع Email</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار بصورت ایمیل را از کاربر دریافت کرد.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-juicy_pink" >
+	<div class="vc_message_box-icon"><i class="fa fa-times"></i>
+	</div><p>اگه مقداری که وارد میشه در قالب یا فرمت ایمیل نباشد بعضی از مرورگرها پیغام هشدار میدهند و میگن مثلا باید ایمیل بطور صحیح وارد شود. </p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d456290275705" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="email"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d456290275705-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d456290275705-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"email"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T9.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Month">Input از نوع Month</span></h2>
+<p>با استفاده از این عنصر میتوان مقدار فقط ماه و سال را از کاربر دریافت کرد.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-warning" >
+	<div class="vc_message_box-icon"><i class="fa fa-exclamation-triangle"></i>
+	</div><p>نحوه نمایش این Input در مرورگرها ممکنه باهمدیگه فرق کنن، مثلا ممکنه در یک مرورگر به یک شکل نشون بده و در مرورگر دیگری به شکل دیگه، یا حتی ممکنه در برخی مرورگرها بکل این اینپوت رو بصورت یک &#8216;input type=&#8217;text نشون بدن</p>
+</div>
+</div></div></div></div>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-juicy_pink" >
+	<div class="vc_message_box-icon"><i class="fa fa-times"></i>
+	</div><p>مرورگرهای Firefox و Safari در حال حاضر از این اینپوت پشتیبانی نمیکنند.</p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d459393540448" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="month"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d459393540448-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d459393540448-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"month"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T10.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Number">Input از نوع Number</span></h2>
+<p>در ادامه آموزش کار با عناصر ورودی یا Input Elements در HTML میخوایم با اینپوت نوع نامبر یا Number آشنا شیم.</p>
+<p>با استفاده از این عنصر میتوان یک مقدار بصورت عددی را از کاربر دریافت کرد و همچنین از صفات زیر میتوان در این عنصر استفاده کرد:</p>
+<ul>
+<li><span style="color: #3366ff;"><strong>min</strong> </span>: کمترین مقداری که میتوان وارد کرد</li>
+<li><span style="color: #3366ff;"><strong>max</strong> </span>: بیشترین مقداری که میتوان وارد کرد</li>
+<li><span style="color: #3366ff;"><strong>value</strong> </span>: یک مقدار از قبل تعریف شده را مشخص میکند</li>
+<li><span style="color: #3366ff;"><strong>step</strong> </span>: میزان پرش بین اعداد را مشخص میکند</li>
+</ul>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d45b569996482" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="number" min="1" max="20" step="1" value="1"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d45b569996482-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d45b569996482-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"number"</span><span class="crayon-h"> </span><span class="crayon-e ">min</span><span class="crayon-o">=</span><span class="crayon-s ">"1"</span><span class="crayon-h"> </span><span class="crayon-e ">max</span><span class="crayon-o">=</span><span class="crayon-s ">"20"</span><span class="crayon-h"> </span><span class="crayon-e ">step</span><span class="crayon-o">=</span><span class="crayon-s ">"1"</span><span class="crayon-h"> </span><span class="crayon-e ">value</span><span class="crayon-o">=</span><span class="crayon-s ">"1"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T11.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Range">Input از نوع Range</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار از طریق یک میله ی لغزان را از کاربر دریافت کرد و همچنین از صفات زیر میتوان در این عنصر استفاده کرد:</p>
+<ul>
+<li><span style="color: #3366ff;"><strong>min</strong> </span>: کمترین مقداری که میتوان وارد کرد</li>
+<li><span style="color: #3366ff;"><strong>max</strong> </span>: بیشترین مقداری که میتوان وارد کرد</li>
+<li><span style="color: #3366ff;"><strong>value</strong> </span>: یک مقدار از قبل تعریف شده را مشخص میکند</li>
+<li><span style="color: #3366ff;"><strong>step</strong> </span>: میزان پرش بین اعداد را مشخص میکند</li>
+</ul>
+<p></p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d45e695403427" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="range" min="0" max="50" step="5" value="25"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d45e695403427-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d45e695403427-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"range"</span><span class="crayon-h"> </span><span class="crayon-e ">min</span><span class="crayon-o">=</span><span class="crayon-s ">"0"</span><span class="crayon-h"> </span><span class="crayon-e ">max</span><span class="crayon-o">=</span><span class="crayon-s ">"50"</span><span class="crayon-h"> </span><span class="crayon-e ">step</span><span class="crayon-o">=</span><span class="crayon-s ">"5"</span><span class="crayon-h"> </span><span class="crayon-e ">value</span><span class="crayon-o">=</span><span class="crayon-s ">"25"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T12.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Search">Input از نوع Search</span></h2>
+<p>با استفاده از این عنصر میتوان یک فیلد رو مخصوص فیلد جستجو مشخص کرد، اینکه فکر کنید مثلا میتونه براتون سیستم جستجو درست کنه خیر اصلا اینجوری نیست، فقط و صرفا یه فیلد درست میکنه اونم دقیقا شبیه &#8220;type=&#8221;text که مثلا بگیم این اینپوت مخصوص باکس جستجو می باشد.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-success" >
+	<div class="vc_message_box-icon"><i class="fa fa-check"></i>
+	</div><p>بخوایم کلی حساب کنیم، کاربردش فقط برای مرورگرهاست، مثلا مرورگر وقتی میبینه این اینپوت از نوع Search می باشد، میگه خب پس این اینپوت برای اینه که کاربر توش یه متنی وارد کنه بعدش این متن در سایت جستجو بشه،فقط همین</p>
+</div>
+</div></div></div></div>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-warning" >
+	<div class="vc_message_box-icon"><i class="fa fa-exclamation-triangle"></i>
+	</div><p>خوده یک سیستم جستجو باید توسط زبان های سمت سرور مثه PHP و پایگاه داده Mysql برنامه نویسی شه.</p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d461660188772" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="search"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d461660188772-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d461660188772-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"search"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T13.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Tel">Input از نوع Tel</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار رو بصورت شماره تلفن از کاربر دریافت کرد.</p>
+<p>این اینپوت بخودی خود هیچ ویژگی خاصی نداره، کلا انگار همون &#8216;input type=&#8217;text هست ، ولی خب بازم اینم مثه اینپوت Search ، یه چیز تعریفی هست، مثلا فقط برای اینه که بگیم این نوع اینپوت برای شماره تلفن هست.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d463472763934" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d463472763934-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d463472763934-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"tel"</span><span class="crayon-h"> </span><span class="crayon-e ">pattern</span><span class="crayon-o">=</span><span class="crayon-s ">"[0-9]{4}-[0-9]{3}-[0-9]{4}"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T14.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid-icon vc_message_box-rounded vc_color-mulled_wine" >
+	<div class="vc_message_box-icon"><i class="fa fa-info-circle"></i>
+	</div><p>توضیح مثال بالا :</p>
+<p>در مثال بالا من از صفت pattern استفاده کردم، با استفاده از این صفت میتونیم به دلخواه خودمون مشخص کنیم که مثلا کاربر چه چیزی بتونه وارد کنه.</p>
+<p>مثلا من از {۴}[۹-۰] استفاده کردم، این یعنی کاربر میتونه ۴ رقم از ۰ تا ۹ وارد کنه، بعدش یه &#8211; گذاشتم، یعنی باید کاربر بعد از ۴رقم اول حتما یه &#8211; بزاره بعدش دوباره یه ۳ رقم و در آخر یه ۴ رقم دیگه.</p>
+<p>حالا نه فقط به این شکل ، کلا هرجوری دوس داشتید میتونید فرمتش رو مشخص کنید، حتما <span style="color: #333399;"><a style="color: #333399;" href="https://free-learn.ir/%d8%b5%d9%81%d8%aa-pattern-%d8%af%d8%b1-html/" target="_blank" rel="noopener">آموزش صفت pattern</a></span> رو مطالعه نمایید.</p>
+</div>
+</div></div></div></div>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Time">Input از نوع Time</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار بصورت زمان ( ساعت : دقیقه و AM یا PM ) از کاربر دریافت کرد.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d466623981493" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="time"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d466623981493-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d466623981493-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"time"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T15.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__URL">Input از نوع URL</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار بصورت آدرس اینترنتی ( مثلا آدرس سایت ) دریافت کرد.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-blue" >
+	<div class="vc_message_box-icon"><i class="fa fa-info-circle"></i>
+	</div><p>توجه داشته باشید که باید در ابتدای آدرس حتما یا <span style="color: #000000;">//:http</span> یا <span style="color: #000000;">//:https</span> وجود داشته باشد. </p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d468149856640" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="url"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d468149856640-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d468149856640-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"url"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T16.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Week">Input از نوع Week</span></h2>
+<p>با استفاده از این عنصر میتوان یک مقدار بصورت هفته در سال از کاربر دریافت کرد، مثلا کاربر میتونه هفته سوم از سال فلان رو انتخاب کنه.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-warning" >
+	<div class="vc_message_box-icon"><i class="fa fa-exclamation-triangle"></i>
+	</div><p>نحوه نمایش این Input در مرورگرها ممکنه باهمدیگه فرق کنن، مثلا ممکنه در یک مرورگر به یک شکل نشون بده و در مرورگر دیگری به شکل دیگه، یا حتی ممکنه در برخی مرورگرها بکل این اینپوت رو بصورت یک &#8216;input type=&#8217;text نشون بدن</p>
+</div>
+</div></div></div></div>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-juicy_pink" >
+	<div class="vc_message_box-icon"><i class="fa fa-times"></i>
+	</div><p>مرورگرهای Firefox و Safari در حال حاضر از این اینپوت پشتیبانی نمیکنند.</p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d46b529729276" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="week"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d46b529729276-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d46b529729276-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"week"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T17.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__File">Input از نوع File</span></h2>
+<p>با استفاده از این عنصر میتوان امکان آپلود کردن فایل ها را توسط کاربران، ایجاد کرد.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-warning" >
+	<div class="vc_message_box-icon"><i class="fa fa-exclamation-triangle"></i>
+	</div><p>این اینپوت خوده عمل آپلود رو نمیتونه انجام بده چون قدرتشو نداره، فقط این قابلیت رو ایجاد میکنه که کاربر بتونه فایل از سیستم خودش انتخاب کنه فقط همین، دیگه اینکه بعدش فایل انتخاب شده آپلود بشه و از این حرفا ، این دیگه توسط زبان های سمت سرور مثه PHP انجام میشه.</p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d46e488155992" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="file"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d46e488155992-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d46e488155992-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"file"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T18.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Image">Input از نوع Image</span></h2>
+<p>با استفاده از این عنصر میتوان دکمه submit رو بصورت عکس یا تصویر ایجاد کرد.</p><!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d470235584202" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="image" src="images/submit-button.png"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d470235584202-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d470235584202-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"image"</span><span class="crayon-h"> </span><span class="crayon-e ">src</span><span class="crayon-o">=</span><span class="crayon-s ">"images/submit-button.png"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+<p></p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T19.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<h2><span id="Input__Hidden">Input از نوع Hidden</span></h2>
+<p>با استفاده از این عنصر میتوان یک فیلد مخفی را ایجاد کرد، یعنی عملا در صفحه هستش ولی از دید کاربر مخفی هست، و میتونیم برخی داده هارو داخل همین اینپوت های مخفی بسمت سرور ارسال کنیم.</p>
+<p>داده هایی که مثلا نیاز نیست کسی ببینه یا مثلا نباید کاربر عادی اونارو ببینه، میتونیم به راحتی داخل اینپوت های مخفی بسمت سرور ارسالشون کنیم.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_message_box vc_message_box-solid vc_message_box-rounded vc_color-warning" >
+	<div class="vc_message_box-icon"><i class="fa fa-exclamation-triangle"></i>
+	</div><p>داده های خیلی حساس و مهم رو اصلا نباید در اینپوت های مخفی قرار داد، چون به راحتی میشه با مشاهده سورس صفحه مقدار اینپوت های مخفی رو درآورد.</p>
+</div>
+</div></div></div></div><br />
+<!-- Crayon Syntax Highlighter v_2.7.2_beta -->
+
+		<div id="crayon-651e88de4d473341751053" class="crayon-syntax crayon-theme-familiar crayon-font-consolas crayon-os-pc print-yes notranslate" data-settings=" minimize scroll-mouseover" style=" margin-top: 12px; margin-bottom: 12px; font-size: 14px !important; line-height: 15px !important;">
+		
+			<div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 14px !important; line-height: 15px !important;">
+&lt;input type="hidden"&gt;</textarea></div>
+			<div class="crayon-main" style="">
+				<table class="crayon-table">
+					<tr class="crayon-row">
+				<td class="crayon-nums " data-settings="show">
+					<div class="crayon-nums-content" style="font-size: 14px !important; line-height: 15px !important;"><div class="crayon-num" data-line="crayon-651e88de4d473341751053-1">1</div></div>
+				</td>
+						<td class="crayon-code"><div class="crayon-pre" style="font-size: 14px !important; line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-651e88de4d473341751053-1"><span class="crayon-r ">&lt;input </span><span class="crayon-e ">type</span><span class="crayon-o">=</span><span class="crayon-s ">"hidden"</span><span class="crayon-r ">&gt;</span></div></div></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+<!-- [Format Time: 0.0001 seconds] -->
+</p>
+<p style="text-align: left;"><a href="https://files.free-learn.ir/Tryitself/html/learn/Tryit_html_Input_Types_T20.php" target="_blank" rel="noopener"><span class="td_btn td_btn_md td_outlined_btn">امتحان کنید</span></a></p>
+<p>به پایان آموزش کار با عناصر ورودی یا Input Elements در HTML رسیدیم، امیدوارم که مشکل خاصی در این آموزش نداشته باشید و نهایت استفاده رو برده باشید.</p>
+<div class="vc_row wpb_row td-pb-row"><div class="wpb_column vc_column_container td-pb-span12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_center vc_sep_color_mulled_wine vc_separator-has-text" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><h4>Free-Learn</h4><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div>
+<a href="javascript:void(0);" onclick="printPage(); return false;" target="_blank" rel="nofollow">
+<span class="td_btn td_btn_sm td_shadow_btn">دریافت PDF یا پرینت این مطلب</span>
+</a>
+    </div>
+
+    <footer>
+                
+        <div class="td-post-source-tags">
+                                </div>
+
+        <div class="td-post-sharing-bottom"><div id="td_uid_6_651e88de8933c" class="td-post-sharing td-ps-bg td-ps-notext td-ps-rounded td-post-sharing-style3 "><div class="td-post-sharing-visible"><div class="td-social-sharing-button td-social-sharing-button-js td-social-handler td-social-share-text">
+                                        <div class="td-social-but-icon"><i class="td-icon-share"></i></div>
+                                        <div class="td-social-but-text">اشتراک‌گذاری</div>
+                                    </div><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-mail" href="mailto:?subject=کار با عناصر ورودی یا Input Elements در HTML&body=https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/">
+                                        <div class="td-social-but-icon"><i class="td-icon-mail"></i></div>
+                                        <div class="td-social-but-text">Email</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffree-learn.ir%2F%25d8%25b9%25d9%2586%25d8%25a7%25d8%25b5%25d8%25b1-%25d9%2588%25d8%25b1%25d9%2588%25d8%25af%25db%258c-%25db%258c%25d8%25a7-input-elements-%25d8%25af%25d8%25b1-html%2F">
+                                        <div class="td-social-but-icon"><i class="td-icon-facebook"></i></div>
+                                        <div class="td-social-but-text">Facebook</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-twitter" href="https://twitter.com/intent/tweet?text=%DA%A9%D8%A7%D8%B1+%D8%A8%D8%A7+%D8%B9%D9%86%D8%A7%D8%B5%D8%B1+%D9%88%D8%B1%D9%88%D8%AF%DB%8C+%DB%8C%D8%A7+Input+Elements+%D8%AF%D8%B1+HTML&url=https%3A%2F%2Ffree-learn.ir%2F%25d8%25b9%25d9%2586%25d8%25a7%25d8%25b5%25d8%25b1-%25d9%2588%25d8%25b1%25d9%2588%25d8%25af%25db%258c-%25db%258c%25d8%25a7-input-elements-%25d8%25af%25d8%25b1-html%2F&via=%D8%B3%D8%A7%DB%8C%D8%AA+%D8%A2%D9%85%D9%88%D8%B2%D8%B4%DB%8C+%D9%81%D8%B1%DB%8C+%D9%84%D8%B1%D9%86">
+                                        <div class="td-social-but-icon"><i class="td-icon-twitter"></i></div>
+                                        <div class="td-social-but-text">Twitter</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-pinterest" href="https://pinterest.com/pin/create/button/?url=https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/&amp;media=https://free-learn.ir/wp-content/uploads/2018/05/IMG-POST-FREE-LEARN-PACK-1-39.jpg&description=%DA%A9%D8%A7%D8%B1+%D8%A8%D8%A7+%D8%B9%D9%86%D8%A7%D8%B5%D8%B1+%D9%88%D8%B1%D9%88%D8%AF%DB%8C+%DB%8C%D8%A7+Input+Elements+%D8%AF%D8%B1+HTML">
+                                        <div class="td-social-but-icon"><i class="td-icon-pinterest"></i></div>
+                                        <div class="td-social-but-text">Pinterest</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-whatsapp" href="whatsapp://send?text=کار با عناصر ورودی یا Input Elements در HTML %0A%0A https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/">
+                                        <div class="td-social-but-icon"><i class="td-icon-whatsapp"></i></div>
+                                        <div class="td-social-but-text">WhatsApp</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/&title=کار با عناصر ورودی یا Input Elements در HTML">
+                                        <div class="td-social-but-icon"><i class="td-icon-linkedin"></i></div>
+                                        <div class="td-social-but-text">Linkedin</div>
+                                    </a><a class="td-social-sharing-button td-social-sharing-button-js td-social-network td-social-telegram" href="https://telegram.me/share/url?url=https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/&text=کار با عناصر ورودی یا Input Elements در HTML">
+                                        <div class="td-social-but-icon"><i class="td-icon-telegram"></i></div>
+                                        <div class="td-social-but-text">Telegram</div>
+                                    </a></div><div class="td-social-sharing-hidden"><ul class="td-pulldown-filter-list"></ul><a class="td-social-sharing-button td-social-handler td-social-expand-tabs" href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#" data-block-uid="td_uid_6_651e88de8933c">
+                                    <div class="td-social-but-icon"><i class="td-icon-plus td-social-expand-tabs-icon"></i></div>
+                                </a></div></div></div>        <div class="td-block-row td-post-next-prev"><div class="td-block-span6 td-post-prev-post"><div class="td-post-next-prev-content"><span>آموزش قبلی</span><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%82%d8%a7%d8%a8%d9%84-%d8%a7%d8%b3%d8%aa%d9%81%d8%a7%d8%af%d9%87-%d8%af%d8%b1-%d8%aa%da%af-form-%d8%af%d8%b1-html/">عناصر قابل استفاده در تگ Form در HTML</a></div></div><div class="td-next-prev-separator"></div><div class="td-block-span6 td-post-next-post"><div class="td-post-next-prev-content"><span>آموزش بعدی</span><a href="https://free-learn.ir/%d8%b5%d9%81%d8%a7%d8%aa-%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-input-attributes-%d8%af%d8%b1-html/">صفات عناصر ورودی Input Attributes در HTML</a></div></div></div>                <span class="td-page-meta" itemprop="author" itemscope itemtype="https://schema.org/Person"><meta itemprop="name" content="صادق اسدی"></span><meta itemprop="datePublished" content="2018-06-05T03:00:36+04:30"><meta itemprop="dateModified" content="۱۴۰۲-۶-۱۹ ۱۳:۴۰:۳۳ +۰۳:۳۰"><meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/"/><span class="td-page-meta" itemprop="publisher" itemscope itemtype="https://schema.org/Organization"><span class="td-page-meta" itemprop="logo" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content=""></span><meta itemprop="name" content="سایت آموزشی فری لرن"></span><meta itemprop="headline " content="کار با عناصر ورودی یا Input Elements در HTML"><span class="td-page-meta" itemprop="image" itemscope itemtype="https://schema.org/ImageObject"><meta itemprop="url" content="https://free-learn.ir/wp-content/uploads/2018/05/IMG-POST-FREE-LEARN-PACK-1-39.jpg"><meta itemprop="width" content="510"><meta itemprop="height" content="330"></span>    </footer>
+
+	<div class="comments" id="comments">
+            </div> <!-- /.content -->
+                        </div>
+                    </div>
+	                <div class="td-pb-span4 td-main-sidebar" role="complementary">
+		                <div class="td-ss-main-sidebar">
+			                <div class="td_block_wrap td_block_9 td_block_widget td_uid_7_651e88de8b7eb_rand td_with_ajax_pagination td-pb-border-top td_block_template_1 td-column-1 td_block_padding td_block_bot_line"  data-td-block-uid="td_uid_7_651e88de8b7eb" >
+<style>
+body .td_uid_7_651e88de8b7eb_rand .td_module_wrap:hover .entry-title a,
+            body .td_uid_7_651e88de8b7eb_rand .td-pulldown-filter-link:hover,
+            body .td_uid_7_651e88de8b7eb_rand .td-subcat-item a:hover,
+            body .td_uid_7_651e88de8b7eb_rand .td-subcat-item .td-cur-simple-item,
+            body .td_uid_7_651e88de8b7eb_rand .td_quote_on_blocks,
+            body .td_uid_7_651e88de8b7eb_rand .td-opacity-cat .td-post-category:hover,
+            body .td_uid_7_651e88de8b7eb_rand .td-opacity-read .td-read-more a:hover,
+            body .td_uid_7_651e88de8b7eb_rand .td-opacity-author .td-post-author-name a:hover,
+            body .td_uid_7_651e88de8b7eb_rand .td-instagram-user a {
+                color: #FF5722;
+            }
+
+            body .td_uid_7_651e88de8b7eb_rand .td-next-prev-wrap a:hover,
+            body .td_uid_7_651e88de8b7eb_rand .td-load-more-wrap a:hover {
+                background-color: #FF5722;
+                border-color: #FF5722;
+            }
+
+            body .td_uid_7_651e88de8b7eb_rand .block-title > *,
+            body .td_uid_7_651e88de8b7eb_rand .td-read-more a,
+            body .td_uid_7_651e88de8b7eb_rand .td-weather-information:before,
+            body .td_uid_7_651e88de8b7eb_rand .td-weather-week:before,
+            body .td_uid_7_651e88de8b7eb_rand .td-subcat-dropdown:hover .td-subcat-more,
+            body .td_uid_7_651e88de8b7eb_rand .td-exchange-header:before,
+            body .td-footer-wrapper .td_uid_7_651e88de8b7eb_rand .td-post-category,
+            body .td_uid_7_651e88de8b7eb_rand .td-post-category:hover {
+                background-color: #FF5722;
+            }
+            body .td-footer-wrapper .td_uid_7_651e88de8b7eb_rand .block-title > * {
+                padding: 6px 7px 5px;
+                line-height: 1;
+            }
+
+            body .td_uid_7_651e88de8b7eb_rand .block-title {
+                border-color: #FF5722;
+            }
+
+            
+            body .td_uid_7_651e88de8b7eb_rand .block-title > * {
+                color: #ffffff;
+            }
+</style><script>var block_td_uid_7_651e88de8b7eb = new tdBlock();
+block_td_uid_7_651e88de8b7eb.id = "td_uid_7_651e88de8b7eb";
+block_td_uid_7_651e88de8b7eb.atts = '{"custom_title":"\u0622\u0645\u0648\u0632\u0634 \u0645\u0642\u062f\u0645\u0627\u062a\u06cc \u0648 \u067e\u06cc\u0634\u0631\u0641\u062a\u0647 HTML","custom_url":"https:\/\/free-learn.ir\/category\/web_design\/html_tutorial\/tutorial_step_by_step_html\/","block_template_id":"","header_color":"#FF5722","header_text_color":"#ffffff","m8_tl":"","limit":"8","offset":"","el_class":"","post_ids":"","category_id":"12","category_ids":"","tag_slug":"","autors_id":"","installed_post_types":"","sort":"oldest_posts","td_ajax_filter_type":"","td_ajax_filter_ids":"","td_filter_default_txt":"All","td_ajax_preloading":"preload","ajax_pagination":"load_more","ajax_pagination_infinite_stop":"","class":"td_block_widget td_uid_7_651e88de8b7eb_rand","separator":"","f_header_font_header":"","f_header_font_title":"Block header","f_header_font_settings":"","f_header_font_family":"","f_header_font_size":"","f_header_font_line_height":"","f_header_font_style":"","f_header_font_weight":"","f_header_font_transform":"","f_header_font_spacing":"","f_header_":"","f_ajax_font_title":"Ajax categories","f_ajax_font_settings":"","f_ajax_font_family":"","f_ajax_font_size":"","f_ajax_font_line_height":"","f_ajax_font_style":"","f_ajax_font_weight":"","f_ajax_font_transform":"","f_ajax_font_spacing":"","f_ajax_":"","f_more_font_title":"Load more button","f_more_font_settings":"","f_more_font_family":"","f_more_font_size":"","f_more_font_line_height":"","f_more_font_style":"","f_more_font_weight":"","f_more_font_transform":"","f_more_font_spacing":"","f_more_":"","m8f_title_font_header":"","m8f_title_font_title":"Article title","m8f_title_font_settings":"","m8f_title_font_family":"","m8f_title_font_size":"","m8f_title_font_line_height":"","m8f_title_font_style":"","m8f_title_font_weight":"","m8f_title_font_transform":"","m8f_title_font_spacing":"","m8f_title_":"","m8f_cat_font_title":"Article category tag","m8f_cat_font_settings":"","m8f_cat_font_family":"","m8f_cat_font_size":"","m8f_cat_font_line_height":"","m8f_cat_font_style":"","m8f_cat_font_weight":"","m8f_cat_font_transform":"","m8f_cat_font_spacing":"","m8f_cat_":"","m8f_meta_font_title":"Article meta info","m8f_meta_font_settings":"","m8f_meta_font_family":"","m8f_meta_font_size":"","m8f_meta_font_line_height":"","m8f_meta_font_style":"","m8f_meta_font_weight":"","m8f_meta_font_transform":"","m8f_meta_font_spacing":"","m8f_meta_":"","css":"","tdc_css":"","td_column_number":1,"color_preset":"","border_top":"","tdc_css_class":"td_uid_7_651e88de8b7eb_rand","tdc_css_class_style":"td_uid_7_651e88de8b7eb_rand_style"}';
+block_td_uid_7_651e88de8b7eb.td_column_number = "1";
+block_td_uid_7_651e88de8b7eb.block_type = "td_block_9";
+block_td_uid_7_651e88de8b7eb.post_count = "8";
+block_td_uid_7_651e88de8b7eb.found_posts = "35";
+block_td_uid_7_651e88de8b7eb.header_color = "#FF5722";
+block_td_uid_7_651e88de8b7eb.ajax_pagination_infinite_stop = "";
+block_td_uid_7_651e88de8b7eb.max_num_pages = "5";
+tdBlocksArray.push(block_td_uid_7_651e88de8b7eb);
+</script><div class="td-block-title-wrap"><h4 class="block-title td-block-title"><a href="https://free-learn.ir/category/web_design/html_tutorial/tutorial_step_by_step_html/tutorial_step_by_step_html.html" class="td-pulldown-size">آموزش مقدماتی و پیشرفته HTML</a></h4></div><div id=td_uid_7_651e88de8b7eb class="td_block_inner">
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%82%d8%af%d9%85-%d8%a8%d9%87-%d9%82%d8%af%d9%85-%d8%b2%d8%a8%d8%a7%d9%86-html/" rel="bookmark" title="آموزش قدم به قدم زبان HTML">آموزش قدم به قدم زبان HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%b3%d8%a7%d8%ae%d8%aa%d8%a7%d8%b1-%db%8c%da%a9-%d9%81%d8%a7%db%8c%d9%84-html/" rel="bookmark" title="آموزش کامل ساختار یک فایل HTML">آموزش کامل ساختار یک فایل HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d9%86%d8%ad%d9%88%d9%87-%d8%a7%db%8c%d8%ac%d8%a7%d8%af-%d9%81%d8%a7%db%8c%d9%84-html/" rel="bookmark" title="آموزش نحوه ایجاد فایل HTML">آموزش نحوه ایجاد فایل HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%aa%d9%88%d8%b6%db%8c%d8%ad%d8%a7%d8%aa-%db%8c%d8%a7-comments-%d8%af%d8%b1-html/" rel="bookmark" title="آموزش کار با توضیحات یا Comments در HTML">آموزش کار با توضیحات یا Comments در HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%da%a9%d8%a7%d8%b1-%d8%a8%d8%a7-%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%db%8c%d8%a7-elements-%d8%af%d8%b1-html/" rel="bookmark" title="آموزش کار با عناصر یا Elements در HTML">آموزش کار با عناصر یا Elements در HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%85%d8%b9%d9%86%d8%a7%db%8c%db%8c-%db%8c%d8%a7-semantic-elements-%d8%af%d8%b1-html/" rel="bookmark" title="عناصر معنایی یا Semantic Elements در HTML">عناصر معنایی یا Semantic Elements در HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D8%B5%D9%81%D8%A7%D8%AA-%DB%8C%D8%A7-attributes-%D8%AF%D8%B1-html/%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D8%B5%D9%81%D8%A7%D8%AA-%DB%8C%D8%A7-attributes-%D8%AF%D8%B1-html.html" rel="bookmark" title="آموزش کار با صفات یا Attributes در HTML">آموزش کار با صفات یا Attributes در HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 -->
+
+	<div class="td-block-span12">
+
+        <div class="td_module_8 td_module_wrap td-meta-info-hide">
+
+            <div class="item-details">
+                <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%A7%D8%B1%D8%A7%DA%AF%D8%B1%D8%A7%D9%81-%D9%87%D8%A7-%DB%8C%D8%A7-paragraphs-%D8%AF%D8%B1-html/%DA%A9%D8%A7%D8%B1-%D8%A8%D8%A7-%D9%BE%D8%A7%D8%B1%D8%A7%DA%AF%D8%B1%D8%A7%D9%81-%D9%87%D8%A7-%DB%8C%D8%A7-paragraphs-%D8%AF%D8%B1-html.html" rel="bookmark" title="آموزش کار با پاراگراف ها یا Paragraphs در HTML">آموزش کار با پاراگراف ها یا Paragraphs در HTML</a></h3>
+                <div class="td-module-meta-info">
+                                                                                                </div>
+            </div>
+
+            
+        </div>
+
+        
+	</div> <!-- ./td-block-span12 --></div><div class="td-load-more-wrap"><a href="https://free-learn.ir/%d8%b9%d9%86%d8%a7%d8%b5%d8%b1-%d9%88%d8%b1%d9%88%d8%af%db%8c-%db%8c%d8%a7-input-elements-%d8%af%d8%b1-html/%D8%B9%D9%86%D8%A7%D8%B5%D8%B1-%D9%88%D8%B1%D9%88%D8%AF%DB%8C-%DB%8C%D8%A7-input-elements-%D8%AF%D8%B1-html.html#" class="td_ajax_load_more td_ajax_load_more_js" id="next-page-td_uid_7_651e88de8b7eb" data-td_block_id="td_uid_7_651e88de8b7eb">بارگذاری مطالب بیشتر ..<i class="td-icon-font td-icon-menu-down"></i></a></div></div> <!-- ./block -->		                </div>
+	                </div>
+                            </div> <!-- /.td-pb-row -->
+    </div> <!-- /.td-container -->
+</article> <!-- /.post -->
+
+<!-- Instagram -->
+
+
+
+
+	<!-- Footer -->
+	<div class="td-footer-wrapper td-container-wrap td-footer-template-14 ">
+    <div class="td-container td-footer-bottom-full">
+        <div class="td-pb-row">
+            <div class="td-pb-span3"><aside class="footer-logo-wrap"><a href="https://free-learn.ir/free-learn_default.html"><img src="https://free-learn.ir/wp-content/uploads/2018/05/Logo-Header-2.png" alt="سایت آموزشی فری لرن" title=""/></a></aside></div><div class="td-pb-span9"><aside class="footer-text-wrap"><div class="block-title"><span>درباره فری لرن</span></div>فری لرن ، سایت آموزشی رایگان که در تاریخ 1 خرداد 97 با هدف ارائه انواع آموزش های رایگان در موضوعات مختلف جهت بالابردن دانش عمومی و تخصصی، همه ی هموطنان در سرتاسر دنیا شروع به فعالیت نموده است. [ <a href="https://free-learn.ir/about-me/" target="_blank">بیشتر بخوانید</a> ]<div class="footer-email-wrap">تماس با ما: <a href="mailto:FreeLearn20181@gmail.com">FreeLearn20181@gmail.com</a></div></aside></div>        </div>
+    </div>
+</div>
+	<!-- Sub Footer -->
+	    <div class="td-sub-footer-container td-container-wrap ">
+        <div class="td-container">
+            <div class="td-pb-row">
+                <div class="td-pb-span td-sub-footer-menu">
+                    <div class="menu-bottom-container"><ul id="menu-bottom" class="td-subfooter-menu"><li id="menu-item-2721" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-first td-menu-item td-normal-menu menu-item-2721"><a href="https://free-learn.ir/%d8%aa%d9%85%d8%b1%db%8c%d9%86-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86/">تمرین آنلاین</a></li>
+<li id="menu-item-2726" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-2726"><a href="https://free-learn.ir/%d8%a2%d8%b2%d9%85%d9%88%d9%86-%d8%a2%d9%86%d9%84%d8%a7%db%8c%d9%86/">آزمون آنلاین</a></li>
+<li id="menu-item-2796" class="menu-item menu-item-type-post_type menu-item-object-page td-menu-item td-normal-menu menu-item-2796"><a href="https://free-learn.ir/%d9%85%d8%ab%d8%a7%d9%84-%d9%87%d8%a7%db%8c-%da%a9%d8%a7%d8%b1%d8%a8%d8%b1%d8%af%db%8c/">مثال های کاربردی</a></li>
+<li id="menu-item-1805" class="menu-item menu-item-type-custom menu-item-object-custom td-menu-item td-normal-menu menu-item-1805"><a href="https://free-learn.ir/online-editor/editor.htm">ادیتور آنلاین</a></li>
+</ul></div>                </div>
+
+                <div class="td-pb-span td-sub-footer-copy">
+                    &copy; کپی برداری از مطالب سایت با ذکر لینک منبع، بلامانع می باشد.                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div><!--close td-outer-wrap-->
+
+                <div class="td-more-articles-box">
+                    <i class="td-icon-close td-close-more-articles-box"></i>
+                    <span class="td-more-articles-box-title">آموزش پیشنهادی</span>
+                    <div class="td-content-more-articles-box">
+
+                    
+        <div class="td_module_7 td_module_wrap td-animation-stack td-meta-info-hide">
+        <div class="td-module-thumb"><a href="https://free-learn.ir/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%aa%da%af-frame-%d8%af%d8%b1-html/" rel="bookmark" class="td-image-wrap" title="آموزش تگ frame در HTML"><img width="100" height="70" class="entry-thumb" src="https://free-learn.ir/wp-content/uploads/2019/03/image-post-freelearn-3-8-2019-41-100x70.jpg" srcset="https://free-learn.ir/wp-content/uploads/2019/03/image-post-freelearn-3-8-2019-41-100x70.jpg 100w, https://free-learn.ir/wp-content/uploads/2019/03/image-post-freelearn-3-8-2019-41-218x150.jpg 218w" sizes="(max-width: 100px) 100vw, 100px" alt="" title="آموزش تگ frame در HTML"/></a></div>
+        <div class="item-details">
+            <h3 class="entry-title td-module-title"><a href="https://free-learn.ir/%d8%a2%d9%85%d9%88%d8%b2%d8%b4-%d8%aa%da%af-frame-%d8%af%d8%b1-html/" rel="bookmark" title="آموزش تگ frame در HTML">آموزش تگ frame در HTML</a></h3>
+            <div class="td-module-meta-info">
+                                                                            </div>
+
+        </div>
+
+        </div>
+
+                            </div>
+                </div>
+
+    <!--
+
+        Theme: Newspaper by tagDiv.com 2017
+        Version: 8.7.4 (rara)
+        Deploy mode: deploy
+        
+        uid: 651e88de962c3
+    -->
+
+    
+<!-- Custom css form theme panel -->
+<style type="text/css" media="screen">
+/* custom css theme panel */
+@media(max-width: 767px){ .td-scroll-up { display: inherit; } }
+.td-header-style-9 .td-header-sp-logo {
+    background-image: url('https://free-learn.ir/wp-content/uploads/2018/05/header-top-main3244.jpg');
+    background-repeat: repeat-x;
+    /* background-position: center; */
+    /* background-size: cover; */
+    background-size: 90%;
+    background-attachment: fixed;
+}
+
+.YEKTANET.yn-article-text .yn-item_title {
+ font-family: IRANSans !important;
+}
+</style>
+
+<div class="td-container"><select class="MySelect My_Theme_Mode" id="Btn_NightMode" title="حالت شب / روز">
+ <option value="theme-auto">خودکار (سیستم عامل)</option>
+ <option value="theme-light">حالت روشن</option>
+ <option value="darktheme">حالت تاریک</option>
+</select></div><script type="text/javascript">function applyTheme(theme){
+ document.body.classList.remove("theme-auto", "theme-light", "darktheme");
+ document.body.classList.add(theme);
+}
+
+document.querySelector("select.My_Theme_Mode").addEventListener("change", function(){
+ applyTheme(this.value);
+});
+   
+const savedTheme = localStorage.getItem("theme") || "auto";
+applyTheme(savedTheme);
+for (const optionElement of document.querySelectorAll("select.My_Theme_Mode option")){
+ optionElement.selected = savedTheme === optionElement.value;
+}
+
+document.querySelector("select.My_Theme_Mode").addEventListener("change", function (){
+ localStorage.setItem("theme", this.value);
+ applyTheme(this.value);
+});</script><link rel='stylesheet' id='font-awesome-css'  href='https://free-learn.ir/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tocplus = {"smooth_scroll":"1","visibility_show":"\u0646\u0645\u0627\u06cc\u0634 \u0628\u062f\u0647","visibility_hide":"\u0645\u062e\u0641\u06cc \u06a9\u0646","width":"100%","smooth_scroll_offset":"70"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://free-learn.ir/wp-content/plugins/table-of-contents-plus/front.min.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-content/themes/Newspaper/myjsforprint/jsfrpr.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-content/themes/Newspaper/myjs_for_tooltip/my_tooltip_js.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-content/themes/Newspaper/js/tagdiv_theme.min.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-includes/js/comment-reply.min.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='https://free-learn.ir/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
+
+<!-- JS generated by theme -->
+
+<script>
+    
+
+	
+
+		(function(){
+			var html_jquery_obj = jQuery('html');
+
+			if (html_jquery_obj.length && (html_jquery_obj.is('.ie8') || html_jquery_obj.is('.ie9'))) {
+
+				var path = 'https://free-learn.ir/wp-content/themes/Newspaper-child/style.css';
+
+				jQuery.get(path, function(data) {
+
+					var str_split_separator = '#td_css_split_separator';
+					var arr_splits = data.split(str_split_separator);
+					var arr_length = arr_splits.length;
+
+					if (arr_length > 1) {
+
+						var dir_path = 'https://free-learn.ir/wp-content/themes/Newspaper';
+						var splited_css = '';
+
+						for (var i = 0; i < arr_length; i++) {
+							if (i > 0) {
+								arr_splits[i] = str_split_separator + ' ' + arr_splits[i];
+							}
+							//jQuery('head').append('<style>' + arr_splits[i] + '</style>');
+
+							var formated_str = arr_splits[i].replace(/\surl\(\'(?!data\:)/gi, function regex_function(str) {
+								return ' url(\'' + dir_path + '/' + str.replace(/url\(\'/gi, '').replace(/^\s+|\s+$/gm,'');
+							});
+
+							splited_css += "<style>" + formated_str + "</style>";
+						}
+
+						var td_theme_css = jQuery('link#td-theme-css');
+
+						if (td_theme_css.length) {
+							td_theme_css.after(splited_css);
+						}
+					}
+				});
+			}
+		})();
+
+	
+	
+</script>
+
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.744 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2023-10-05 13:28:54 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

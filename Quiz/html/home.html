@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<title>آزمون آنلاین زبان HTML - سایت آموزشی فری لرن</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/jsQuizEngine.css">
+<link rel="stylesheet" type="text/css" href="css/style-night-mode.css">
+<script src="js/jquery-1.11.2.js"></script>
+<script src="js/knockout-2.2.1.js"></script>  
+<script src="js/jsQuizEngine.js"></script> 
+<script src="js/timer.js"></script>
+<link rel="shortcut icon" href="images/favicon.png"/>
+<script>
+var quizEngine = null;
+$(function () {
+quizEngine = jsQuizEngine($('#jsQuizEngine'), { quizUrl: 'quiz/default.htm' });
+});
+</script>
+<style>
+.ty12{
+font-size:14px;
+background-color:#282C34 !important;
+}
+html,body,h1,h2,h3,h4,h5 {font-family: IRANSansBold,tahoma,"Open Sans", sans-serif}
+h2{font-size:18px;}h1{font-size:18px;}
+.mycolor{background-color:#ccc;}
+.bshadow{box-shadow: 0 3px 6px rgba(0,0,0,.05);}
+.shadowhover:hover{box-shadow: 0 0 20px rgba(0,0,0,.15);transition:0.6s;}
+.mytransition{transition:0.6s;}
+.bbshadow{box-shadow: 0 0 20px rgba(0,0,0,.15);transition:0.6s;}
+.mylist{list-style-type:none;}
+.mylist li{padding:5px;}
+@font-face{
+font-family:IRANSansBold;
+src:url(fonts/IRANSansBold.eot);
+src:url(fonts/IRANSansBold.eot?#iefix) format("embedded-opentype"),
+url(fonts/IRANSansBold.woff) format("woff"),
+url(fonts/IRANSansBold.ttf) format("truetype")
+}
+.shadowbody{box-shadow: 2px 5px 30px rgba(0,0,0,.1);}
+.borderme{border:3px solid #f1f1f1;}
+.mylinkhome{
+text-decoration:none;
+color:#000;
+background-color:#f2f2f2;
+padding:3px 7px;
+
+}
+.mylinkhome:hover{
+background-color:#1d7ce7;
+color:#fff;
+}
+.w3-flat-nephritis1{
+background-color:#5db616;
+color:#fff;
+}
+
+span.myspan{
+color:#7c04df;
+}
+
+.mybtncss{
+background-color:#1F5EFF;
+font-size: 15px;
+color:#fff;
+margin-top: 10px;
+}
+button.my-button{
+border:none;
+font-size:26px;
+padding:3px 5px;
+cursor:pointer;
+font-family:FontAwesome,IRANSansBold;
+background-color:transparent;
+}
+span.myspan1{
+cursor:pointer;
+background-color:#f2f2f2;
+padding:1px 18px;
+border-radius:100%;
+box-shadow: 0 1px 2px 1px #D3D2D3;
+}
+</style>
+<body class="ty12"><script>function gregorian_to_jalali(gy,gm,gd){ var g_d_m,jy,jm,jd,gy2,days; g_d_m=[0,31,59,90,120,151,181,212,243,273,304,334]; if(gy > 1600){  jy=979;  gy-=1600; }else{  jy=0;  gy-=621; } gy2=(gm > 2)?(gy+1):gy; days=(365*gy) +(parseInt((gy2+3)/4)) -(parseInt((gy2+99)/100)) +(parseInt((gy2+399)/400)) -80 +gd +g_d_m[gm-1]; jy+=33*(parseInt(days/12053));  days%=12053; jy+=4*(parseInt(days/1461)); days%=1461; if(days > 365){  jy+=parseInt((days-1)/365);  days=(days-1)%365; } jm=(days < 186)?1+parseInt(days/31):7+parseInt((days-186)/30); jd=1+((days < 186)?(days%31):((days-186)%30)); return [jy,jm,jd];}</script>
+<div class="w3-container w3-content " style="max-width:100%;margin-top:10px; margin-bottom:20px; direction:rtl;">    
+<div class="w3-row">
+<div class="w3-col m12"> 
+<div class="w3-row-padding">
+<div class="w3-col m12">
+<div class="shadowbody w3-round w3-white yu">
+<div class="w3-container w3-padding">
+<h1 class="w3-center bg-dark">آزمون آنلاین زبان HTML</h1>
+<h2 style="direction:ltr;font-size:15px; text-align:center;" class="w3-text-green">
+<a class="w3-btn mylinkhome" href="../../free-learn_default.html" target="_blank">سایت آموزشی فری لرن</a>
+<br><br>
+<div class="switch" title="حالت شب" style="float:right;margin-top:10px;margin-left:5px;">
+<input title="حالت شب" class="switch__input" type="checkbox" id="themeSwitch">
+ <label aria-hidden="true" class="switch__label" for="themeSwitch">حالت شب</label>
+<div aria-hidden="true" class="switch__marker"></div>
+</div>
+<br>
+</h2>
+<br>
+<div class="w3-panel w3-flat-nephritis w3-display-container w3-card">
+<span onclick="this.parentElement.style.display='none'" class="w3-button w3-large w3-display-topleft">&times;</span>
+<p>با کلیک بروی دکمه راهنمایی میتوانید یک راهنمایی دریافت نمایید</p>
+<p>این آزمون صرفا برای به چالش کشیدن میزان دانش شما نسبت به زبان HTML می باشد.</p>  
+</div>       
+<section class="container">
+<div id="jsQuizEngine">
+<section id="title" data-bind="visible: !quizStarted()" class="w3-center">
+<div class="jumbotron">
+<p><button onclick="startTimer();" class="w3-animate-zoom w3-btn w3-flat-nephritis " data-bind="click: startQuiz">شروع آزمون</button></p>
+</div>
+</section>
+<br>
+<section class="quiz" data-bind="visible: quizStarted() && !quizComplete()">
+<div style="text-align:right;" class="borderme w3-round-xxlarge w3-padding">سوال <span data-bind="text: currentQuestionIndex"></span> از <span data-bind="text: questionCount"></span> <span style="float:left;">زمان : <span id="timer">00:00</span></span>
+</div>
+<br>
+<div class="question-pool borderme w3-padding"></div>
+<button class="w3-btn w3-flat-nephritis w3-card-2" data-bind="click: movePreviousQuestion, disable: currentQuestionIsFirst">قبلی</button>
+<button class="w3-btn w3-flat-nephritis w3-card-2" data-bind="click: showCurrentQuestionHint, visible: currentQuestionHasHint()">راهنمایی</button>
+<button class="w3-btn w3-flat-nephritis w3-card-2" data-bind="click: moveNextQuestion, disable: currentQuestionIsLast, visible: !currentQuestionIsLast()">بعدی</button>
+<button onclick="gettime();" class="w3-btn w3-blue w3-card-2" data-bind="click: calculateScore, visible: currentQuestionIsLast">اتمام آزمون و نمایش نتیجه</button>
+</section>
+<section class="score" data-bind="visible: quizComplete" style="text-align:center;">
+<img src="images/user.png">
+<h5>نتیجه آزمون:</h5>
+<div>تاریخ: <div style="display:inline; direction:ltr;"><span id="mydate"></span></div> | ساعت :<span data-bind="text: calculatedScoreDate"></span></div>
+<div>مدت زمان آزمون : <span class="myspan" id="usertime"></span></div>
+<div>سطح : <span class="myspan">متوسط</span></div>
+<div>تعداد سوالات: <span class="myspan" data-bind="text: questionCount"></span></div>
+<div>میزان درصد پاسخ گویی: <span class="myspan" data-bind="text: calculatedScore"></span> <span class="myspan">درصد</span></div>
+<div>تعداد پاسخ صحیح: <span class="myspan" data-bind="text: totalQuestionsCorrect"></span></div>
+<div class="pass-indicator">
+<h1 style="text-align:center;font-size:20px;" data-bind="css: { 'w3-text-green': quizPassed, 'w3-text-red': !quizPassed() }">
+<span data-bind="visible: quizPassed">
+تبریک میگم دوست عزیز، شما با موفقیت آزمون زبان HTML را پاس کردید
+<br>
+فکر میکنم دیگه وقتشه که زبان CSS را بصورت حرفه ای شروع کنی
+<br>
+<a href="../../category/web_design/css_tutorial/css_tutorial.html" class="mybtncss w3-animate-zoom w3-btn mytransition">آموزش CSS</a> 
+</span>
+<span data-bind="visible: !quizPassed()">
+دوست خوبم متاسفانه شما از این آزمون نتیجه ی خوبی نگرفتید
+<br>
+باید بیشتر تلاش کنی تا بتونی زبان HTML رو یاد بگیری
+<br>
+<a href="../../category/web_design/html_tutorial/html_tutorial.html" style="margin-top:10px;font-size:15px;" class="w3-flat-nephritis w3-animate-zoom w3-btn mytransition">آموزش HTML</a>
+</span>
+</h1>
+</div>
+<hr>
+<a href="home.html" class="w3-animate-zoom w3-btn w3-flat-nephritis mytransition">میخوام دوباره آزمون بدم</a> 
+</section><script>ndt=new Date();g_y=ndt.getFullYear();g_m=ndt.getMonth()+1;g_d=ndt.getDate();shamsi=gregorian_to_jalali(g_y,g_m,g_d);document.getElementById("mydate").innerHTML = shamsi[0]+' / '+shamsi[1]+' / '+shamsi[2];</script>
+<br><br>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/js-night-mode.js"></script>
+</body>
+</html> 

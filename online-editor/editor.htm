@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+<title>ادیتور آنلاین HTML,CSS,JavaScript | سایت آموزشی فری لرن</title>
+<meta charset="UTF-8"/>
+<meta name="description" content="کد ادیتور آنلاین HTML,CSS,JavaScript مناسب طراحان وب بصورت کاملا رایگان"/>
+<meta name="keywords" content="online editor HTML, HTML5, CSS, CSS3, JavaScript, jquery, jquery UI, web designer, designer, web developer, developer , editor online , online editor html, html-css-js editor online ,free-learn , سایت آموزشی فری لرن , ادیتور آنلاین , ادیتور آنلاین html و css"/>
+<meta name="author" content="free-learn.ir"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+<script src="css/bootstrap/jquery.min.js"></script>
+<script src="css/bootstrap/popper.min.js"></script>
+<script src="css/bootstrap/bootstrap.min.js"></script>
+<link rel="stylesheet" href="hint/common/code-completion.css"/>
+<link rel="stylesheet" href="hint/js/lint.css">
+<link rel="stylesheet" href="https://files.free-learn.ir/online-editor/hint/js/show-hint.css">
+<link rel="stylesheet" href="hint/js/eclipse.css">
+<link rel="stylesheet" href="hint/js/tomorrow-night-eighties.css">
+<link rel="stylesheet" href="hint/js/ternjs/tern-extension.css">
+<link rel="stylesheet" href="hint/js/show-hint-eclipse.css">
+<link rel="stylesheet" href="hint/js/show-context-info.css">
+<link rel="stylesheet" href="hint/js/templates-hint.css">
+<link rel="stylesheet" href="lint/lint.css">
+<link rel="stylesheet" href="lib/codemirror.css">
+<link rel="stylesheet" href="external/toggle/style.css"/>
+<link rel="stylesheet" href="css/dropit.css"/>
+<link rel="stylesheet" href="css/code-completion.css"/>
+<link rel="stylesheet" href="css/style-menu.css"/>
+<link rel="stylesheet" href="css/tipTip.css"/>
+<link rel="stylesheet" href="css/jqx.base.css"/>
+<link rel="stylesheet" href="css/alertify.core.css"/>
+<link rel="stylesheet" href="css/alertify.default.css"/>
+<link rel="stylesheet" href="css/alertify.bootstrap.css"/>
+<link rel="stylesheet" href="css/responsive.css"/>
+<link rel="stylesheet" href="fonts/font-awesome.min/font-awesome.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400' type='text/css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Inconsolata:400' type='text/css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:400,300' type='text/css'>
+<link rel="stylesheet" href="theme/tomorrow-night-eighties.css">
+<!-- <link rel="stylesheet" type="text/css" href="component.css"/> -->
+<link rel="stylesheet" href="style.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<style type="text/css">
+html, body {
+height: 100%;
+width: 100%;
+margin: 0;
+padding: 0;
+overflow: hidden;}
+.CodeMirror-gutters {
+background: none;
+border: none;}
+.CodeMirror {
+width: 100%;
+height: 100%;
+position: relative;
+top: 0;
+font-family: Inconsolata, Consola, Monaco, sans-serif;
+font-size: 15.8px;
+line-height: 1.2em;
+cursor: default !important;}
+.CodeMirror-gutters {
+padding: 0 7px;
+min-width: 20px;
+text-align: right;
+background: none;
+border: none;}
+.CodeMirror-scroll {
+cursor: default;}
+</style>
+<script type="text/javascript" src="ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+<script type="text/javascript" src="ajax/libs/js-beautify/1.10.0/beautify.min.js"></script>
+<script type="text/javascript" src="ajax/libs/js-beautify/1.10.0/beautify-css.min.js"></script>
+<script type="text/javascript" src="ajax/libs/js-beautify/1.10.0/beautify-html.js"></script>
+<script type="text/javascript" src="js/jszip.min.js"></script>
+<script type="text/javascript" src="lib/codemirror.js"></script>
+<script type="text/javascript" src="js/mod/pophtmlmixed/pophtmlmixed.js"></script>
+<script type="text/javascript" src="js/mod/poptags/poptags.js"></script>
+<script type="text/javascript" src="hint/common/code-completion.js"></script>
+<script type="text/javascript" src="hint/css/css-completion.js"></script>
+<script type="text/javascript" src="hint/html/html-completion.js"></script>
+<script type="text/javascript" src="hint/js/lint.js"></script>
+<script type="text/javascript" src="hint/js/show-hint.js"></script>
+<script type="text/javascript" src="hint/js/closetag.js"></script>
+<script type="text/javascript" src="hint/js/closebrackets.js"></script>
+<script type="text/javascript" src="hint/js/matchbrackets.js"></script>
+<script type="text/javascript" src="hint/js/runmode.js"></script>
+<script type="text/javascript" src="hint/js/javascript.js"></script>
+<script type="text/javascript" src="hint/js/jshint-r12-80277ef.js"></script>
+<script type="text/javascript" src="hint/js/lint.js"></script>
+<!-- This is JavaScript Lint file. Does not work with ES6 keywords -->
+<script type="text/javascript" src="https://files.free-learn.ir/online-editor/hint/js/javascript-lint.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/acorn/acorn.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/acorn/acorn_loose.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/acorn/walk.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern/lib/signal.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern/lib/tern.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern/lib/def.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern/lib/comment.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern/lib/infer.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/tern-extension.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/defs/ecma5.json.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/defs/jquery.json.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/defs/browser.json.js"></script>
+<script type="text/javascript" src="hint/js/ternjs/defs/keywords.json.js"></script>
+<script type="text/javascript" src="hint/js/show-context-info.js"></script>
+<script type="text/javascript" src="hint/js/templates-hint.js"></script>
+<script type="text/javascript" src="hint/js/javascript-templates.js"></script>
+<script type="text/javascript" src="lint/lint.js"></script>
+<script type="text/javascript" src="lint/css-lint.js"></script>
+<script type="text/javascript" src="lint/csslint.js"></script>
+<script type="text/javascript" src="assets/js/jquery.generateFile.js"></script>
+<!-- <script type="text/javascript" src="assets/js/script.js"></script> -->
+<script type="text/javascript" src="external/toggle/jquery/iphone-style-checkboxes.js"></script>
+<script type="text/javascript" src="https://files.free-learn.ir/online-editor/js/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
+<script type="text/javascript" src="js/jquery.tipTip.minified.js"></script>
+<script type="text/javascript" src="js/jqxcore.js"></script>
+<script type="text/javascript" src="js/jqxsplitter.js"></script>
+<script type="text/javascript" src="https://files.free-learn.ir/online-editor/js/gettheme.js"></script>
+<script type="text/javascript" src="js/dropit.js"></script>
+<script type="text/javascript" src="js/jshint.js"></script>
+<script type="text/javascript" src="js/emmet.min.js"></script>
+<script type="text/javascript" src="js/alertify.js"></script>
+<script type="text/javascript" src="js/browser-detect.js"></script>
+<script type="text/javascript" src="js/mousetrap.min.js"></script>
+<script type="text/javascript" src="https://files.free-learn.ir/online-editor/mode/xml/xml.js"></script>
+<script type="text/javascript" src="mod/css/css.js"></script>
+<script type="text/javascript" src="https://files.free-learn.ir/online-editor/mode/javascript/javascript.js"></script> 
+<script type="text/javascript" src="js/weave.script.js"></script>
+<script src="js/togetherjs-min.js"></script>
+
+<script type="text/javascript">
+$(window).load(function () {
+renderPreview();
+$('.tools-menu').dropit();
+$("#js-errors").hide();
+$("#footer-message").show();
+alertify.set({delay: 1000});
+
+});
+</script>
+</head>
+<body>
+
+<div id="splashscreen">
+<div class="load-container">
+<p class="loader-text">لطفا کمی صبر نمایید</p>
+</div>
+</div>
+
+<div class="header">
+<ul id="header-menu">
+<li><a href="../free-learn_default.html" target="_blank"><span id="logo" title="برو به وبسایت فری لرن"></span></a></li>
+</ul>
+
+<div id="login-mode">
+
+<div id="code-format">
+<a id="tidy"><span class="format" title="مرتب سازی تمامی کدها">مرتب سازی کدها</span></a>
+</div>
+
+<div id="download-code" class="showinmob">
+<a id="download"><span class="download-code" title="دانلود فایل فشرده کدها">دانلود کدها</span></a>
+</div>
+
+<div id="toggle-night-vision">
+<div class="night-vision-text">حالت شب</div>
+<div class="theme sticky-scroll-switch night-vision" title="حالت شب / روز">
+<input type="checkbox" id="night-vision"/>
+</div>
+</div>
+
+<div id="toggle-live-mode" class="noshowinmob">
+<div class="live-mode-text">اجرای خودکار</div>
+<div class="onchange sticky-scroll-switch" title="اجرای اتوماتیک">
+<input type="checkbox" checked="checked" id="auto-run"/>
+</div>
+<a href="javascript:renderPreview()" id="run"><span class="run" title="برای اجرای کدها کلیک نمایید">اجرای کدها</span></a>
+</div>
+
+</div>
+</div>
+
+<ul class="tools-menu" style=" position:relative;top:0;left:167px; width:115px;height:45px; list-style-type:none;">
+<li>
+<a href="javascript:void(0)" id="tools"><span class="pos-tools-menu">ابزار</span></a>
+<ul style="direction:rtl; text-align:right;width:350px; padding:20px; margin-top:1px; list-style-type: none; background:white; color: #777777;box-shadow: 2px 5px 30px rgba(0,0,0,.1); " class="field-shadow">
+<li><i class="fa fa-download"></i>&nbsp;&nbsp;دانلود</li> 
+<li><a style="cursor:pointer;" id="download-zip" title="دانلود کدها">دانلود کامل کدها با فرمت (ZIP)</a><br><br></li>
+<li><i class="fa fa-book"></i>&nbsp;&nbsp;کتابخانه کد و تگ</li>
+<li><a id="mymodals1code" title="کتابخانه های محبوب جاوااسکریپت و سی اس اس">برای اضافه کردن تگ و کتابخانه های محبوب کلیک کنید</a></li>
+<hr>
+<li><i class="fa fa-sort"></i>&nbsp;&nbsp;مرتب سازی</li>
+<li>
+<a href="javascript:void(0)" id="code-format-js" title="فقط کدهای جاوااسکریپت رو مرتب کن">JS</a> |
+<a href="javascript:void(0)" id="code-format-css" title="فقط کدهای سی اس اس رو مرتب کن">CSS</a> |
+<a href="javascript:void(0)" id="code-format-html" title="فقط کدهای اچ تی ام ال رو مرتب کن">HTML</a> |
+<a href="javascript:void(0)" id="code-format-all" title="تمامی کدهارو مرتب کن">مرتب سازی تمامی کدها</a>
+</li><br>
+<li><i class="fa fa-code"></i>&nbsp;&nbsp;حالت نمایش</li>
+<li>
+<a href="javascript:void(0)" id="layout1" title="نمای پیش فرض">پیش فرض</a> | 
+<a href="javascript:void(0)" id="layout3" title="نمای افقی تمام عرض">افقی تمام عرض</a> | 
+<a href="javascript:void(0)" id="layout2" title="نمای عمودی">عمودی</a> 
+</li>
+
+</ul>
+</li>
+</ul>
+
+<div class="fake-line-3"></div>
+<form action="https://files.free-learn.ir/online-editor/submit.php" method="post" id="myform">
+<div class="pos-split-container">
+<div id="splitContainer">
+
+<div>
+<div id="leftSplitter">
+<div>
+<textarea id="html-source" name="html-source"></textarea>
+<span class="html-logo" id="html-mode" title="دستورات اچ تی ام ال"></span>
+<a id="fullscreen-html-toggle" title="تمام صفحه"><span class="fullscreen-small" id="fullscreen-html"></span></a>
+</div>
+<div>
+<textarea id="css-source" name="css-source"></textarea>
+<span class="css-logo" id="css-mode" title="دستورات سی اس اس"></span>
+<!-- <i class="fa fa-2x fa-cog pos-fa-cog" title="CSS3 Code Generator"></i> --> 
+<a id="fullscreen-css-toggle" title="تمام صفحه"><span class="fullscreen-small" id="fullscreen-css"></span></a>
+</div>
+</div>
+</div>
+
+<div>
+<div id="rightSplitter">
+<div>
+<textarea id="js-source" name="js-source"></textarea>
+<span class="js-logo" id="js-mode" title="دستورات جاوااسکریپت"></span>
+<a id="fullscreen-js-toggle" title="تمام صفحه"><span class="fullscreen-small" id="fullscreen-js"></span></a>
+</div>
+<div>
+<iframe id="preview" name="preview" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-modals allow-scripts"></iframe>
+<a style="cursor:pointer;" title="تمام صفحه"><span id="preview-mode"></span></a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<input type="text" name="dummy-title" id="dummy-title" value=""/>
+<input type="text" name="dummy-layout" id="dummy-layout" value="1"/>
+<input type="text" name="dummy-theme" id="dummy-theme" value="0"/>
+<input type="text" name="dummy-id" id="dummy-id" value=""/>
+</form>
+
+<div class="fake-line-1"></div>
+<div class="fake-line-2"></div>
+
+<ul id="footer-message">  
+<!-- <li>
+<span class="footer-message-close" style="background:#5db616;" data-toggle="tooltip" title="بستن این پیغام"><i class="fa fa-times" aria-hidden="true"></i></span>
+<span class="footer-message-content" style="color: white;background:#0066CC;"> 
+<a href="#" target="_blank">message1</a>
+</span>
+</li> -->
+ 
+<!-- <li>
+<span class="footer-message-close" style="background:#8B0000;"><i class="fa fa-times" aria-hidden="true"></i></span>
+<span class="footer-message-content" style="color: white;background:#B22222;">message2</span>
+</li> -->
+</ul>
+
+<div id="myModalcode" class="modal">
+<div class="modal-content">
+<span class="closemodal" style="font-size:20px;cursor:pointer;"></span>
+<table id="mytableformodal">
+<tr style="background-color:#f2f2f2;color:#004cff;"><td colspan="5">
+تگ های از پیش تعریف شده و پراستفاده HTML (برای اضافه کردن لطفا بروی تگ مورد نظر کلیک نمایید)
+<br>
+قبل از کلیک بروی تگ ها، محلی که میخواهید تگ در آنجا قرار بگیرد را با کلیک انتخاب نمایید.
+<br>
+(مثلا در ابتدای تگ body کلیک نمایید تا تگ هم دقیقا در همانجا اضافه شود)
+</td></tr>
+<tr>
+<td><a href="javascript:void(0)"  id="generator-mytag-a">&lt;a&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-article">&lt;article&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-aside">&lt;aside&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-audio">&lt;audio&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-blockquote">&lt;blockquote&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-button">&lt;button&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-canvas">&lt;canvas&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-datalist">&lt;datalist&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-dialog">&lt;dialog&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-div">&lt;div&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-embed">&lt;embed&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-footer">&lt;footer&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-form">&lt;form&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-header">&lt;header&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-hr">&lt;hr&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-iframe">&lt;iframe&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-img">&lt;img&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-input">&lt;input&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-link">&lt;link&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-main">&lt;main&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-map">&lt;map&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-meta">&lt;meta&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-nav">&lt;nav&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-ol">&lt;ol&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-p">&lt;p&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-picture">&lt;picture&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-pre">&lt;pre&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-script">&lt;script&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-section">&lt;section&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-span">&lt;span&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-style">&lt;style&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-svg">&lt;svg&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-table">&lt;table&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-textarea">&lt;textarea&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-title">&lt;title&gt;</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0)" id="generator-mytag-track">&lt;track&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-ul">&lt;ul&gt;</a></td>
+<td><a href="javascript:void(0)" id="generator-mytag-video">&lt;video&gt;</a></td>
+<td><a href="javascript:void(0)">-</a></td>
+<td><a href="javascript:void(0)">-</a></td>
+</tr>
+
+<tr style="background-color:#f2f2f2;color:#004cff;"><td colspan="5">
+کتابخانه های محبوب JS و CSS (برای اضافه کردن لطفا بروی کتابخانه مورد نظر کلیک نمایید)
+<br>
+بصورت خودکار در قسمت head صفحه قرار میگیرند.
+</td></tr>
+<tr>
+<td><a href="javascript:void(0);" id="animatecss" title="Animate CSS">Animate CSS (3.7.0)</a> <span class="popular">محبوب</span></td>
+<td><a href="javascript:void(0);" id="bootstrap" title="Bootstrap">Bootstrap (4)</a> <span class="popular">محبوب</span></td>
+<td><a href="javascript:void(0);" id="font-awesome" title="Font Awesome">Font Awesome (4.7.0)</a> <span class="popular">محبوب</span></td>
+<td><a href="javascript:void(0);" id="jquery" title="jQuery">jQuery (آخرین نسخه)</a> <span class="popular">محبوب</span></td>
+<td><a href="javascript:void(0);" id="jqueryui" title="jQuery UI">jQuery UI (آخرین نسخه)</a></td>
+</tr>
+<tr>
+<td><a href="javascript:void(0);" id="modernizr" title="Modernizr">Modernizr (آخرین نسخه)</a></td>
+<td><a href="javascript:void(0);" id="paper" title="Paper JS">Paper JS (0.9.9)</a></td>
+<td><a href="javascript:void(0);" id="mootools" title="Moo Tools">Moo Tools</a></td>
+<td><a href="javascript:void(0);" id="underscore" title="Underscore JS">Underscore JS </a></td>
+<td><a href="javascript:void(0);" id="webfontloader" title="Web Font Loader">Web Font Loader (1.4.10)</a></td>
+</tr>
+<tr>
+<td colspan="5">اگر کتابخانه ای مدنظر شماست لطفا از طریق این ایمیل FreeLearn20181@gmail.com اطلاع رسانی نمایید تا در لیست بالا قرار بگیرد.</td>
+</tr>
+</table>
+</div>
+</div>
+
+<button type="button" id="shortcuts-info-btn" data-toggle="modal" data-target="#myModal_shortbtn">کلیدهای میانبر <i class="fa fa-book"></i></button>
+<div id="myModal_shortbtn" class="modal fade" role="dialog">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-body" style="text-align:center;">
+<p>دانلود کدها : <span style="direction:ltr;" class="tag">D</span> + <span style="direction:ltr;" class="tag">Ctrl</span></p>
+<hr>
+<p>اجرا کردن کدها : <span style="direction:ltr;" class="tag">R</span> + <span style="direction:ltr;" class="tag">Ctrl</span>
+ <br><br>
+ <span class="tag">باید اجرای خودکار OFF باشد</span>
+</p>
+<hr>
+<p>
+کامل کننده کد - متن را انتخاب سپس دکمه های <span style="direction:ltr;" class="tag">E</span> + <span style="direction:ltr;" class="tag">Ctrl</span> را فشار دهید.
+<br>
+یا هم یک کلمه از دستور یا تگ را بنویسید و سپس دکمه های <span style="direction:ltr;" class="tag">E</span> + <span style="direction:ltr;" class="tag">Ctrl</span> را فشار دهید.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="myModal_helpeditor" class="modal fade" role="dialog">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-body" style="text-align:right;">
+<h5>ادیتور در یک نگاه</h5>
+<div style="text-align:center;">
+<a href="images/help/editor-online-free-learn.ir.png" title="برای بزرگنمایی لطفا کلیک کنید" target="_blank">
+<img src="images/help/editor-online-free-learn.ir.png" width="400" height="200" alt="ادیتور آنلاین سایت فری لرن">
+</a>
+</div>
+<br><hr>
+<h5>حالت های نمایش</h5>
+<p>ادیتور دارای 3حالت نمایش می باشد، که میتوانید به راحتی هر یک از این حالت ها را انتخاب و سپس شروع به کدنویسی کنید.</p>
+<p style="text-align:center;color:#000;">
+حالت پیش فرض<br>
+<img src="images/help/layout-1.png" width="350" height="200" style="opacity:0.9;">
+</p> 
+
+<p style="text-align:center;color:#000;">
+حالت افقی تمام عرض<br>
+<img src="images/help/layout-2.png" width="350" height="200" style="opacity:0.9;">
+</p> 
+
+<p style="text-align:center;color:#000;">
+حالت عمودی<br>
+<img src="images/help/layout-3.png" width="350" height="200" style="opacity:0.9;">
+</p> 
+<hr>
+<h5>با سرعت بالا کدنویسی کنید</h5>
+<p>
+شما فقط کافیه 1 حرف تایپ کنید، ادیتور بطورخودکار با استفاده از کلمات ذخیره و رزرو شده دستوراتی را به شما پیشنهاد خواهد داد که میتوانید آنها را انتخاب و استفاده نمایید.
+</p>
+<p style="text-align:center;">
+<img src="images/help/codewrite.gif">
+</p>
+<p>
+حتی مقادیر برخی از دستورات نیز بصورت ذخیره شده وجود دارد، مثلا در تگ iframe بصورت خودکار مقدار صفت src آدرس سایت فری لرن می باشد که کافیه با یک کلیک اضافش کنید.
+</p>
+<p style="text-align:center;">
+<img src="images/help/reze.gif">
+</p>
+<hr>
+<h5>ذخیره سازی کدها در مرورگر</h5>
+<p>
+ادیتور از فناوری ذخیره سازی تحت وب یا local storage یا web storage استفاده میکند ، این یعنی ذخیره سازی دادها بروی مرورگر شما.
+</p>
+<p>
+یعنی شما اگه کدی نوشتید و بعد به هر دلیلی صفحه ناگهانی بسته شد یا مثلا برق رفت ، نگران نباشید چرا که کدهای شما ذخیره خواهد شد وکافیه دوباره به ادیتور مراجعه کنید.
+</p>
+<p>
+ولی یادتون باشه اگه کدهای یکی از بخش ها (html,css,js) بطور کامل پاک شود و بعد صفحه رو رفرش کنید صفحه پیش فرض ادیتور به شما نمایش داده خواهد شد، در نتیجه در این حالت کدی از شما ذخیره نخواهد شد.
+</p>
+<hr>
+<h5>کامل کننده کد</h5>
+<p>
+کافیه یک کلمه از یک دستور را بنویسید، سپس دکمه های Ctrl+E را فشار دهید، بصورت خودکار کلمه مورد نظر تاجایی که امکانش باشد تشخیص و ایجاد میشود.
+</p>
+<p style="text-align:center;">
+<img src="images/help/ctrle.gif">
+</p>
+<hr>
+<h5>اجرای خودکار کدها</h5>
+<p>
+بصورت پیش فرض ادیتور در حالت اجرای خودکار قرار دارد، این یعنی کدهای شما درجا و بلافاصله با تایپ شدن در خروجی هم نمایش داده میشوند.
+</p>
+<p>
+با کلیک بروی منوی اجرای خودکار میتوانید آن را غیرفعال نمایید، و باید بروی دکمه ( اجرای کدها ) کلیک نمایید تا کدهای شما اجرا شوند.
+</p>
+<p>
+همچنین میتوانید از کلیدهای ترکیبی Ctrl+R برای اجرای کدها استفاده نمایید. (این کلید میانبر فقط در حالتی عمل میکند که اجرای خودکار غیرفعال باشد)
+</p>
+<hr>
+<h5>دانلود کدها</h5>
+<p>
+به راحتی با کلیک بروی دکمه دنلود کدها میتوانید تمامی کدهای هر 3 بخش html,css,js را در قالب یک فایل فشرده zip دانلود نمایید.
+همچنین میتوانید از کلیدهای ترکیبی Ctrl+D برای دانلود کردن کدها استفاده نمایید.
+</p>
+<hr>
+<h5>مرتب سازی کدها</h5>
+<p>
+در حین کدنویسی نگران مرتب بودن کدها نباشید، شما در هرحالتی کدهاتون رو بنویسید و در آخر کار بروی دکمه مرتب سازی کدها کلیک نمایید و کدهای مرتب و تمیز شده تحویل بگیرید.
+</p>
+<hr>
+<h5>کتابخانه های محبوب css و js</h5>
+<p>
+از منوی ابزار ، میتوانید کتابخانه های محبوب css و js را مشاهده و در صورت تمایل تنها با یک کلیک آنها را به صفحه اضافه نمایید.
+</p>
+<hr>
+<h5>تگ های پراستفاده از پیش تعریف شده</h5>
+<p>
+تعدادی از تگ های پراستفاده HTML را براتون آماده کردم که با یک کلیک میتونید اون تگ رو به صفحه اضافه کنید.<br>
+فقط قبل از اینکه بروی تگ مورد نظرتون کلیک کنید در قسمت body و اونجایی که میخواید تا اضافه شه کلیک کنید.
+</p>
+
+</div>
+</div>
+</div>
+</div>
+
+<div id="myModal_whatlocal" class="modal fade" role="dialog">
+<div class="modal-dialog modal-lg">
+<div class="modal-content">
+<div class="modal-body" style="text-align:right;">
+<p>
+فناوری Web Storage یا ذخیره سازی تحت وب از نظر عملکرد شبیه به کوکی ها هستند، ولی Web Storage ها سرعت بسیار بالاتری نسبت به کوکی ها دارند.
+</p>
+<p>
+بطور کلی کار Web Storage ها اینه که یکسری ازاطلاعات را بروی مرورگر کاربر ( اون شخصی که اون صفحه رو درخواست میده ) ذخیره میکنند تا دیگه در دفعات بعدی نیاز نباشه باز اطلاعات از سرور گرفته شه، خب اینجوری سرعت اون صفحه وب برای بارگذاری میره بالا .
+</p>
+<p>
+ولی یه مشکل با کوکی ها داریم، اینکه با هربار درخواست به سمت سرور ارسال میشوند، خب همین میتونه باعث کاهش سرعت بارگذاری صفحه باشه، این درحالیه که Web Storage ها بروی مرورگر کاربر ذخیره میشوند و دیگه لازم نیست با هربار درخواست بسمت سرور ارسال شوند.
+</p>
+<p>
+وقتی کاربر برای دفعات بعدی بخواد اون صفحه رو مشاهده کنه ، از همون داده هایی که درون مرورگرش ذخیره شده است استفاده میکنه و دیگه بسمت سرور درخواست جدید ارسال نمیکند.
+</p>
+<p>
+در ادیتور آنلاین فری لرن هم از این فناوری استفاده شده، در نتیجه اگر شما برای اولین بار وارد ادیتور میشوید ممکن است کمی طول بکشد تا ادیتور بطور کامل بارگذاری شود ، ولی دیگه در دفعات بعدی سرعت بارگذاری ادیتور بسیار بالا خواهد بود.
+</p>
+<p>
+همچنین کدهای شما در ادیتور ذخیره میشوند ، لذا اگه صفحه ادیتور به هر دلیلی بسته شد نگران نباشید چرا که کدهای شما ذخیره شده است و کافیه دوباره صفحه ادیتور رو باز کنید.
+</p>
+<p>
+نکته : اگر در ادیتور، تمامی کدهای موجود در یکی از بخش های HTML یا CSS یا JS بطور کامل حذف شوند ، فناوری Web Storage در آن لحظه برای شما نیز حذف میشود، در نتیجه اگر صفحه را رفرش ( تازه سازی ) کنید ، صفحه پیش فرض ادیتور برای شما ظاهر خواهد شد و این یعنی اون لحظه اگر کدی چیزی نوشته بودید بدون اینکه ذخیره شود حذف خواهد شد.
+</p>
+<p>
+ولی خب نگران نباشید ، باز در دفعات بعدی کدهای شما ذخیره خواهد شد، فقط تا زمانی که کدهای یکی از بخش های HTML یا CSS یا JS بطور کامل حذف نشود.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+<div class="ruler hide"></div>
+<ul class="links noshowinmob">
+<li><a href="../free-learn_default.html" target="_blank" title="سایت آموزشی فری لرن"><span style="padding:5px;color:#c6c0c0;">خانه</span></a></li> |
+<li><a href="../category/web_design/html_tutorial/html_tutorial.html" target="_blank" title="آموزش کامل زبان اچ تی ام ال"><span style="padding:5px;color:#c6c0c0;">آموزش HTML</span></a></li> |
+<li><a href="../category/web_design/css_tutorial/css_tutorial.html" target="_blank" title="آموزش کامل زبان سی اس اس"><span style="padding:5px;color:#c6c0c0;">آموزش CSS</span></a></li> |
+<li><a href="../Tamrin/html/exercise_attributes1.html" target="_blank" title="زبان اچ تی ام ال را بصورت آنلاین تمرین کنید"><span style="padding:5px;color:#c6c0c0;">تمرین آنلاین HTML</span></a></li> |
+<li><a href="../Quiz/html/home.html" target="_blank" title="آزمون آنلاین زبان اچ تی ام ال"><span style="padding:5px;color:#c6c0c0;">آزمون آنلاین HTML</span></a></li> |
+<li><a href="javascript:viod(0);" data-toggle="modal" data-target="#myModal_helpeditor" title="راهنمای کار با ادیتور"><span style="padding:5px;color:#c6c0c0;">راهنمای ادیتور</span></a></li>
+</ul>
+<ul class="full-screen-section">
+<li><div id="preview-mode-toggle" class="full-screen-logo" title="تمام صفحه"></div></li>
+</ul>
+</div>
+
+<script type="text/javascript" id="cookieinfo" 	src="js/nti-first-use-editor.js" data-close-text="باشه ، ممنون"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/bind.history.js"></script>
+<script type="text/javascript" src="js/mymodals.js"></script>
+</body>
+</html>
